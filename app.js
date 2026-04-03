@@ -145,6 +145,82 @@ const courses = {
             explanation: "𓅓𓂋𓇋𓏇𓇋𓅱𓏏𓃠 (mr.i miwt) means \"I like cats.\""
           },
         ]
+      },
+      "basics-3": {
+        title: "My name is Abuyin Ibn Djadir Ibn Omar Kalid Ben Hadji Al Sharidi",
+        intro: "You will learn more about adjectives and 2 new words",
+        questions: [
+          {
+            type: "info",
+            title: "New word: 𓉐𓏤 - house",
+            text: "𓉐𓏤 (pr)",
+            example: "𓉐𓏤𓇋𓄤 (pr.i nfr) - My house is good",
+            explanation: "This word is written with 2 glyphs that represend meaning."
+          },
+          {
+            type: "info",
+            title: "New word: 𓂋𓈖 - name",
+            text: "𓂋𓈖 (rn)",
+            example: "𓂋𓈖𓀀X (mr.i X) - My name is X",
+            explanation: "This word is written in a bunch of glyphs representing diffrent letters (𓂋 - r, 𓈖 - n)"
+          },
+          {
+            type: "match",
+            prompt: "Match the hieroglyphs to their reading.",
+            subtitle: "Tap one item on the left, then the matching item on the right and then click check.",
+            pairs: [
+              ["𓂋𓈖", "name"],
+              ["𓉐𓏤", "house"],
+              ["𓏇𓇋𓅱𓃠", "cat"],
+              ["𓉔𓏏𓊪", "hi"]
+            ],
+            explanation: ""
+          },
+          {
+            type: "info",
+            title: "Ancient Egyptian grammar",
+            text: "Adjective endings",
+            example: "𓄤𓏏𓏇𓇋𓅱𓃠 (good cat)",
+            explanation: "In Ancient Egyptian adjectives have endings of the noun. While masculine nouns don't give adjectives any endings (if the noun isn't plural), feminine does and the ending that they give (if they're singular) is 𓏏. For example 𓏇𓇋𓅱𓃠 is feminine so it will be 𓄤𓏏𓏇𓇋𓅱𓃠 not 𓄤𓏇𓇋𓅱𓃠."
+          },
+          {
+            type: "match",
+            prompt: "Match the hieroglyphs to their reading.",
+            subtitle: "Tap one item on the left, then the matching item on the right and then click check.",
+            pairs: [
+              ["𓄤𓏇𓇋𓅱𓃠", "nonesense, absolute bs"],
+              ["𓄤𓏏𓏇𓇋𓅱𓃠", "good cat"]
+            ],
+            explanation: "𓏇𓇋𓅱𓃠 is feminine so you add 𓏏 to 𓄤𓏏"
+          },
+          {
+            type: "blocks",
+            prompt: "Translate into Ancient Egyptian hieroglyphs.",
+            subtitle: "Build the hieroglyph sentence from the blocks.",
+            source: "My house is beautiful.",
+            answer: ["𓉐𓏤", "𓀀", "𓄤"],
+            words: ["𓂋𓂝𓇳", "𓉐𓏤", "𓇋𓈖𓎡", "𓀀", "𓏇𓇋𓅱𓃠", "𓄤"],
+            explanation: "The answer is 𓂋𓂝𓇳𓄤 (ra nfr, IPA: rꜥ nfr), 𓂋𓂝𓇳 means sun and 𓄤 means good/beautiful."
+          },
+          {
+            type: "blocks",
+            prompt: "Translate into Ancient Egyptian hieroglyphs.",
+            subtitle: "Build the hieroglyph sentence from the blocks.",
+            source: "My name is Abuyin Ibn Djadir Ibn Omar Kalid Ben Hadji Al Sharidi",
+            answer: ["𓂋𓈖", "𓇋", "Abuyin Ibn Djadir Ibn Omar Kalid Ben Hadji Al Sharidi"],
+            words: ["𓇋", "𓉐𓏤", "𓇋𓈖𓎡", "𓂋𓈖", "𓏇𓇋𓅱𓃠", "Abuyin Ibn Djadir Ibn Omar Kalid Ben Hadji Al Sharidi"],
+            explanation: "The answer is 𓂋𓈖𓇋 Abuyin Ibn Djadir Ibn Omar Kalid Ben Hadji Al Sharidi (rn.i Abuyin Ibn Djadir Ibn Omar Kalid Ben Hadji Al Sharidi), 𓂋𓈖 means name, 𓇋 as well as 𓀀 means my and Abuyin Ibn Djadir Ibn Omar Kalid Ben Hadji Al Sharidi means Abuyin Ibn Djadir Ibn Omar Kalid Ben Hadji Al Sharidi."
+          },
+          {
+            type: "blocks",
+            prompt: "Translate into Ancient Egyptian hieroglyphs.",
+            subtitle: "Build the hieroglyph sentence from the blocks.",
+            source: "Beautiful cat",
+            answer: ["𓄤", "𓏏", "𓏇𓇋𓅱𓃠"],
+            words: ["𓇋", "𓏏", "𓇋𓈖𓎡", "𓄤", "𓏇𓇋𓅱𓃠"],
+            explanation: "𓏇𓇋𓅱𓃠 means cat and 𓄤 means beautiful/good. The word cat is feminine so you add 𓏏 at the end of the adjcetive (𓄤)"
+          }
+        ]
       }
     }
   }
