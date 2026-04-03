@@ -1,0 +1,601 @@
+const courses = {
+  "ancient-egyptian": {
+    title: "Ancient Egyptian basics",
+    emoji: "𓆎𓅓𓏏",
+    description: "Learn beginner hieroglyphs, transliteration, and simple sentence patterns.",
+    lessons: {
+      "basics-1": {
+        title: "First words",
+        intro: "You will learn how to form basic sentences and words (with hieroglyphs): 𓄤 good, 𓇋𓈖𓎡 I, 𓇳 sun",
+        questions: [
+          {
+            type: "info",
+            title: "New word: 𓂋𓂝𓇳 - sun",
+            text: "𓂋𓂝𓇳 (ra, IPA: rꜥ)",
+            example: "𓊪𓈖 𓂋𓂝𓇳 (pn ra, IPA: pn rꜥ) - this is sun",
+            explanation: "IPA reading (International Phonetic Alphabet) is the standaralised way of writing language sounds. This word is writen with multiple glyphs (letter glyphs and 1 meaning glyph)."
+          },
+          {
+            type: "info",
+            title: "New word: 𓄤 - good/beautiful",
+            text: "𓄤 (nfr)",
+            example: "𓂋𓂝𓇳 𓄤 (ra nfr, IPA: rꜥ nfr) - the sun is beautiful",
+            explanation: "This word is writen with a single glyph instead of multiple letters."
+          },
+          {
+            type: "match",
+            prompt: "Match the hieroglyphs to their reading.",
+            subtitle: "Tap one item on the left, then the matching item on the right and then click check.",
+            pairs: [
+              ["𓂋𓂝𓇳", "ra, IPA: rꜥ"],
+              ["𓄤", "nfr"],
+            ],
+            explanation: ""
+          },
+          {
+            type: "info",
+            title: "Ancient Egyptian grammar",
+            text: "To be",
+            example: "𓂋𓂝𓇳𓄤 (The sun is good)",
+            explanation: "In Ancient Egyptian there is no to be, instead of saying \"A is B\" you just say \"A B\". But pronouns change their form if we want to \"add to be\" after them."
+          },
+          {
+            type: "blocks",
+            prompt: "Translate into English.",
+            subtitle: "Build the English sentence from the blocks.",
+            source: "𓂋𓂝𓇳𓄤",
+            answer: ["The", "sun", "is", "beautiful"],
+            words: ["The", "sun", "is", "beautiful", "I", "bad"],
+            explanation: "𓂋𓂝𓇳𓄤 (ra nfr, IPA: rꜥ nfr) means \"the sun is beautiful.\""
+          },
+          {
+            type: "info",
+            title: "New word: 𓇋𓈖𓎡 - I",
+            text: "𓇋𓈖𓎡 (ink)",
+            example: "𓇋𓈖𓎡 𓄤 (ink nfr) - I am good",
+            explanation: "This word is written in a bunch of glyphs representing diffrent letters (𓇋 - i, 𓈖 - n, 𓎡 - k)."
+          },
+          {
+            type: "blocks",
+            prompt: "Translate into English.",
+            subtitle: "Build the English sentence from the blocks.",
+            source: "𓇋𓈖𓎡 𓄤",
+            answer: ["I", "am", "good"],
+            words: ["I", "am", "good", "sun", "bad"],
+            explanation: "𓇋𓈖𓎡 𓄤 (ink nfr) means \"I am good\""
+          },
+          {
+            type: "blocks",
+            prompt: "Translate into Ancient Egyptian hieroglyphs.",
+            subtitle: "Build the hieroglyph sentence from the blocks.",
+            source: "The sun is beautiful.",
+            answer: ["𓂋𓂝𓇳", "𓄤"],
+            words: ["𓂋𓂝𓇳", "𓄤", "𓇋𓈖𓎡"],
+            explanation: "The answer is 𓂋𓂝𓇳𓄤 (ra nfr, IPA: rꜥ nfr), 𓂋𓂝𓇳 means sun and 𓄤 means good/beautiful."
+          }
+        ]
+      },
+      "basics-2": {
+        title: "Hi, I like cats",
+        intro: "You will learn how to say hi and use verbs in first person",
+        questions: [
+          {
+            type: "info",
+            title: "New word: 𓉔𓏏𓊪 - hi",
+            text: "𓉔𓏏𓊪 (Htp, IPA: ḥ tp)",
+            example: "𓉔𓏏𓊪. 𓊪𓈖 𓂋𓂝𓇳 (Htp. pn ra, IPA: ḥ tp. pn rꜥ) - Hi. This is sun",
+            explanation: "This word is written in a bunch of glyphs representing diffrent letters (𓉔 - ḥ , 𓏏 - t, 𓊪 - p)."
+          },
+          {
+            type: "info",
+            title: "New word: 𓏇𓇋𓅱𓃠 - cat (feminine noun)",
+            text: "𓏇𓇋𓅱𓃠 (miw)",
+            example: "𓅓𓂋𓇋𓏇𓇋𓅱𓏏𓃠 (mr.i miwt) - I like cats",
+            explanation: "This word is writen with multiple glyphs (letter glyphs and 1 meaning glyph)."
+          },
+          {
+            type: "match",
+            prompt: "Match the hieroglyphs to their reading.",
+            subtitle: "Tap one item on the left, then the matching item on the right and then click check.",
+            pairs: [
+              ["𓂋𓂝𓇳", "sun"],
+              ["𓏇𓇋𓅱𓃠", "cat"],
+              ["𓉔𓏏𓊪", "hi"]
+            ],
+            explanation: ""
+          },
+          {
+            type: "info",
+            title: "Ancient Egyptian grammar",
+            text: "Plural form of feminine nouns",
+            example: "𓏇𓇋𓅱𓏏𓃠 (cats)",
+            explanation: "In Ancient Egyptian there are masculine and feminine nouns, most of the times the ones that end with 𓏏 are feminine and the rest is masculine. The word 𓏇𓇋𓅱𓃠 is feminine even though it ends with an 𓅱 (𓃠 don't carry any sound). To make fem. noun plural you just add 𓅱𓏏, if the noun already have 𓅱 at the end, you add 𓏏 by itself."
+          },
+          {
+            type: "match",
+            prompt: "Match the hieroglyphs to their reading.",
+            subtitle: "Tap one item on the left, then the matching item on the right and then click check.",
+            pairs: [
+              ["𓏇𓇋𓅱𓅱𓏏𓃠", "incorrect plural"],
+              ["𓏇𓇋𓅱𓏏𓃠", "correct plural"]
+            ],
+            explanation: "The noun already have 𓅱 at the end so you add only 𓏏"
+          },
+          {
+            type: "info",
+            title: "New word: 𓅓𓂋 - to like",
+            text: "𓅓𓂋(mr)",
+            example: "𓅓𓂋𓇋𓏇𓇋𓅱𓏏𓃠 (mr.i miwt) - I like cats",
+            explanation: "This word is written in a bunch of glyphs representing diffrent letters (𓅓 - m, 𓂋 - r)."
+          },
+          {
+            type: "info",
+            title: "Ancient Egyptian grammar",
+            text: "Verbs in first person (I)",
+            example: "𓅓𓂋𓇋 - I like",
+            explanation: "To specify that you are the one doing the action you add 𓇋/𓀀 (i) at the of the verb. For example 𓅓𓂋 (to like) - 𓅓𓂋𓀀 (I like)"
+          },
+          {
+            type: "blocks",
+            prompt: "Translate into English.",
+            subtitle: "Build the English sentence from the blocks.",
+            source: "𓅓𓂋𓇋 𓏇𓇋𓅱𓏏𓃠",
+            answer: ["I", "like", "cats"],
+            words: ["The", "sun", "like", "cat", "I", "to like", "beautiful", "cats"],
+            explanation: "𓅓𓂋𓇋𓏇𓇋𓅱𓏏𓃠 (mr.i miwt) means \"I like cats.\""
+          },
+        ]
+      }
+    }
+  }
+};
+
+const hieroglyphDictionary = [
+  { glyph: "𓇳", translit: "rꜥ", meaning: "sun", note: "A beginner sign used in lesson 1." },
+  { glyph: "𓄤", translit: "nfr", meaning: "good / beautiful", note: "A common adjective for early lessons." },
+  { glyph: "𓇋𓈖𓎡", translit: "ink", meaning: "I", note: "Independent pronoun: ‘I’." },
+  { glyph: "𓂋𓈖", translit: "rn", meaning: "name", note: "Useful later for introductions." },
+  { glyph: "𓉐", translit: "pr", meaning: "house", note: "Useful later for possession: pr.i = my house." }
+];
+
+const $ = (id) => document.getElementById(id);
+
+function getParams() {
+  const params = new URLSearchParams(window.location.search);
+  return {
+    courseId: params.get("course") || "ancient-egyptian",
+    lessonId: params.get("lesson") || "basics-1"
+  };
+}
+
+function shuffle(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+function setProgress(current, total) {
+  const progressText = $("progressText");
+  const progressBar = $("progressBar");
+  if (progressText) progressText.textContent = `${current} / ${total}`;
+  if (progressBar) progressBar.style.width = `${(current / total) * 100}%`;
+}
+
+function renderIndex() {
+  const grid = $("courseGrid");
+  if (!grid) return;
+
+  grid.innerHTML = Object.entries(courses).map(([courseId, course]) => {
+    const lessonCount = Object.keys(course.lessons).length;
+    return `
+      <article class="course-card">
+        <div class="course-top">
+          <div class="course-badge">${course.emoji}</div>
+          <div style="flex:1">
+            <h3>${course.title}</h3>
+            <p>${course.description}</p>
+          </div>
+        </div>
+        <ul class="lesson-list">
+          <li>
+            <div>
+              <strong>${lessonCount} lesson${lessonCount === 1 ? "" : "s"}</strong><br>
+              <small>Open the course page or jump straight into lesson 1.</small>
+            </div>
+            <a class="lesson-link" href="course.html?course=${encodeURIComponent(courseId)}">Open</a>
+          </li>
+        </ul>
+      </article>
+    `;
+  }).join("");
+}
+
+function renderCoursePage() {
+  const courseTitle = $("courseTitle");
+  const lessonList = $("lessonList");
+  if (!courseTitle || !lessonList) return;
+
+  const { courseId } = getParams();
+  const course = courses[courseId];
+
+  if (!course) {
+    courseTitle.textContent = "Course not found";
+    const intro = $("courseIntro");
+    if (intro) intro.textContent = "Go back and choose a valid course.";
+    lessonList.innerHTML = "";
+    return;
+  }
+
+  document.title = `${course.title} | LinguaPath`;
+  const badge = $("courseBadge");
+  if (badge) badge.textContent = `${course.emoji} ${course.title}`;
+  courseTitle.textContent = course.title;
+  const intro = $("courseIntro");
+  if (intro) intro.textContent = course.description;
+
+  const lessons = Object.entries(course.lessons).map(([lessonId, lesson], index) => `
+    <li>
+      <div>
+        <strong>Lesson ${index + 1}: ${lesson.title}</strong><br>
+        <small>${lesson.intro}</small>
+      </div>
+      <a class="lesson-link" href="lesson.html?course=${encodeURIComponent(courseId)}&lesson=${encodeURIComponent(lessonId)}">Start</a>
+    </li>
+  `).join("");
+
+  lessonList.innerHTML = lessons;
+
+  const dictLink = $("dictionaryLink");
+  if (dictLink) dictLink.href = `dictionary.html?course=${encodeURIComponent(courseId)}`;
+}
+
+function renderDictionaryPage() {
+  const list = $("dictionaryGrid");
+  if (!list) return;
+
+  const search = $("search");
+  const render = () => {
+    const term = (search?.value || "").trim().toLowerCase();
+    const filtered = hieroglyphDictionary.filter(entry => {
+      const haystack = `${entry.glyph} ${entry.translit} ${entry.meaning} ${entry.note}`.toLowerCase();
+      return haystack.includes(term);
+    });
+
+    list.innerHTML = filtered.map(entry => `
+      <article class="dict-card">
+        <div class="glyph" lang="egy">${entry.glyph}</div>
+        <h3>${entry.meaning}</h3>
+        <p><strong>${entry.translit}</strong></p>
+        <p>${entry.note}</p>
+      </article>
+    `).join("") || `<p class="small">No matches.</p>`;
+  };
+
+  search?.addEventListener("input", render);
+  render();
+}
+
+function renderLessonPage() {
+  const exercise = $("exercise");
+  if (!exercise) return;
+
+  const { courseId, lessonId } = getParams();
+  const course = courses[courseId];
+  const lesson = course?.lessons?.[lessonId];
+
+  if (!course || !lesson) {
+    const courseTitle = $("courseTitle");
+    const lessonTitle = $("lessonTitle");
+    if (courseTitle) courseTitle.textContent = "Lesson not found";
+    if (lessonTitle) lessonTitle.textContent = "Go back to the course page and choose a valid lesson.";
+    exercise.innerHTML = `<p>Unknown course or lesson.</p>`;
+    $("checkBtn")?.classList.add("hidden");
+    $("nextBtn")?.classList.add("hidden");
+    $("feedback")?.classList.add("hidden");
+    $("explanation")?.classList.add("hidden");
+    return;
+  }
+
+  document.title = `${lesson.title} | ${course.title}`;
+  $("lessonBadge").textContent = `${course.emoji} ${course.title}`;
+  $("courseTitle").textContent = course.title;
+  $("lessonTitle").textContent = `${lesson.title} · ${lesson.intro}`;
+  $("questionIndex").textContent = "Question 1";
+  $("typeLabel").textContent = "";
+  $("feedback").className = "feedback";
+  $("explanation").className = "explanation";
+  $("checkBtn").classList.remove("hidden");
+  $("nextBtn").classList.add("hidden");
+  $("checkBtn").disabled = false;
+  $("nextBtn").textContent = "Next";
+
+  const state = {
+    index: 0,
+    selectedLeft: null,
+    selectedRight: null,
+    answerTokens: [],
+    answerTokenIndices: [],
+    usedWordIndices: new Set(),
+    answered: false
+  };
+
+  const total = lesson.questions.length;
+  setProgress(1, total);
+
+  function currentQuestion() {
+    return lesson.questions[state.index];
+  }
+
+  function clearMessages() {
+    $("feedback").className = "feedback";
+    $("feedback").textContent = "";
+    $("explanation").className = "explanation";
+    $("explanation").textContent = "";
+  }
+
+  function showFeedback(ok, text) {
+    const feedback = $("feedback");
+    feedback.className = `feedback show ${ok ? "correct" : "wrong"}`;
+    feedback.textContent = text;
+  }
+
+  function showExplanation(text) {
+    const box = $("explanation");
+    box.className = "explanation show";
+    box.textContent = text || "";
+  }
+
+  function renderQuestion() {
+    const q = currentQuestion();
+    state.selectedLeft = null;
+    state.selectedRight = null;
+    state.answerTokens = [];
+    state.answerTokenIndices = [];
+    state.usedWordIndices = new Set();
+    state.answered = false;
+
+    $("questionIndex").textContent = `Question ${state.index + 1}`;
+    $("prompt").textContent = q.title || q.prompt || "";
+    $("subtitle").textContent = q.subtitle || "";
+    $("checkBtn").disabled = false;
+    $("nextBtn").classList.add("hidden");
+    $("checkBtn").classList.remove("hidden");
+    clearMessages();
+
+    if (q.type === "info") {
+      $("typeLabel").textContent = "Introduction";
+      $("checkBtn").classList.add("hidden");
+      $("nextBtn").classList.remove("hidden");
+      $("nextBtn").textContent = state.index === total - 1 ? "Finish" : "Next";
+      exercise.innerHTML = `
+        <div class="info-card">
+          <div class="info-glyph">${q.text || ""}</div>
+          ${q.example ? `<div class="info-example">${q.example}</div>` : ""}
+        </div>
+      `;
+      showExplanation(q.explanation || "");
+      return;
+    }
+
+    $("typeLabel").textContent = q.type === "match" ? "Match pairs" : "Translate with blocks";
+
+    if (q.type === "match") {
+      const left = shuffle(q.pairs.map((pair, i) => ({ label: pair[0], id: i })));
+      const right = shuffle(q.pairs.map((pair, i) => ({ label: pair[1], id: i })));
+
+      exercise.innerHTML = `
+        <div class="match-help">Tap one card on the left and one on the right to make a pair.</div>
+        <div class="match-layout">
+          <div class="column" id="leftColumn"></div>
+          <div class="column" id="rightColumn"></div>
+        </div>
+      `;
+
+      const leftCol = $("leftColumn");
+      const rightCol = $("rightColumn");
+
+      leftCol.innerHTML = left.map(item => `
+        <button class="option" data-side="left" data-id="${item.id}" type="button">${item.label}</button>
+      `).join("");
+
+      rightCol.innerHTML = right.map(item => `
+        <button class="option" data-side="right" data-id="${item.id}" type="button">${item.label}</button>
+      `).join("");
+
+      [...exercise.querySelectorAll(".option")].forEach(btn => {
+        btn.addEventListener("click", () => {
+          if (state.answered) return;
+          const side = btn.dataset.side;
+          const id = Number(btn.dataset.id);
+
+          if (side === "left") {
+            state.selectedLeft = id;
+            leftCol.querySelectorAll('.option[data-side="left"]').forEach(b => {
+              b.classList.toggle("selected", Number(b.dataset.id) === id);
+            });
+          } else {
+            state.selectedRight = id;
+            rightCol.querySelectorAll('.option[data-side="right"]').forEach(b => {
+              b.classList.toggle("selected", Number(b.dataset.id) === id);
+            });
+          }
+        });
+      });
+    }
+
+    if (q.type === "blocks") {
+      exercise.innerHTML = `
+        <div class="builder">
+          <div class="source-box">Translate: ${q.source}</div>
+          <div class="answer-box" id="answerBox" aria-label="Answer area"></div>
+          <div class="word-bank" id="wordBank"></div>
+          <div class="small">Click a word to add it. Click a word in the answer area to remove it.</div>
+        </div>
+      `;
+
+      const answerBox = $("answerBox");
+      const wordBank = $("wordBank");
+
+      wordBank.innerHTML = q.words.map((word, idx) => `
+        <button class="word" type="button" data-index="${idx}">${word}</button>
+      `).join("");
+
+      function renderAnswer() {
+        answerBox.innerHTML = "";
+
+        if (state.answerTokens.length === 0) {
+          answerBox.innerHTML = `<span class="small">Your answer will appear here</span>`;
+          return;
+        }
+
+        state.answerTokens.forEach((word, idx) => {
+          const chip = document.createElement("button");
+          chip.type = "button";
+          chip.className = "chip";
+          chip.textContent = word;
+          chip.addEventListener("click", () => {
+            if (state.answered) return;
+            const wordIndex = state.answerTokenIndices[idx];
+            state.answerTokens.splice(idx, 1);
+            state.answerTokenIndices.splice(idx, 1);
+            state.usedWordIndices.delete(wordIndex);
+            renderAnswer();
+            syncWordBank();
+          });
+          answerBox.appendChild(chip);
+        });
+      }
+
+      function syncWordBank() {
+        [...wordBank.querySelectorAll(".word")].forEach(btn => {
+          const idx = Number(btn.dataset.index);
+          const used = state.usedWordIndices.has(idx);
+          btn.classList.toggle("used", used);
+          btn.disabled = used || state.answered;
+        });
+      }
+
+      wordBank.querySelectorAll(".word").forEach(btn => {
+        btn.addEventListener("click", () => {
+          if (state.answered) return;
+          const idx = Number(btn.dataset.index);
+          if (state.usedWordIndices.has(idx)) return;
+
+          state.usedWordIndices.add(idx);
+          state.answerTokens.push(btn.textContent);
+          state.answerTokenIndices.push(idx);
+          renderAnswer();
+          syncWordBank();
+        });
+      });
+
+      renderAnswer();
+      syncWordBank();
+    }
+  }
+
+  function evaluate() {
+    const q = currentQuestion();
+
+    if (q.type === "match") {
+      if (state.selectedLeft === null || state.selectedRight === null) {
+        showFeedback(false, "Pick one item on each side first.");
+        return false;
+      }
+
+      const isCorrect = state.selectedLeft === state.selectedRight;
+      const leftBtn = exercise.querySelector(`.option[data-side="left"][data-id="${state.selectedLeft}"]`);
+      const rightBtn = exercise.querySelector(`.option[data-side="right"][data-id="${state.selectedRight}"]`);
+
+      if (isCorrect) {
+        if (leftBtn) {
+          leftBtn.classList.add("correct", "matched");
+          leftBtn.disabled = true;
+        }
+        if (rightBtn) {
+          rightBtn.classList.add("correct", "matched");
+          rightBtn.disabled = true;
+        }
+        state.selectedLeft = null;
+        state.selectedRight = null;
+        showFeedback(true, "Correct pair!");
+        const allMatched = exercise.querySelectorAll(".option.matched").length / 2 === q.pairs.length;
+        return allMatched;
+      }
+
+      if (leftBtn) leftBtn.classList.add("wrong");
+      if (rightBtn) rightBtn.classList.add("wrong");
+
+      setTimeout(() => {
+        if (leftBtn && !leftBtn.classList.contains("matched")) leftBtn.classList.remove("wrong", "selected");
+        if (rightBtn && !rightBtn.classList.contains("matched")) rightBtn.classList.remove("wrong", "selected");
+      }, 700);
+
+      state.selectedLeft = null;
+      state.selectedRight = null;
+      showFeedback(false, "That pair is not correct. Try again.");
+      return false;
+    }
+
+    if (q.type === "blocks") {
+      const correct = JSON.stringify(state.answerTokens) === JSON.stringify(q.answer);
+      if (correct) {
+        showFeedback(true, "Correct sentence!");
+        return true;
+      }
+      showFeedback(false, "Not quite. Check the word order and try again.");
+      return false;
+    }
+
+    return false;
+  }
+
+  function lockQuestion() {
+    state.answered = true;
+    $("checkBtn").disabled = true;
+    $("nextBtn").classList.remove("hidden");
+    showExplanation(currentQuestion().explanation || "");
+    $("nextBtn").textContent = state.index === total - 1 ? "Finish" : "Next";
+  }
+
+  $("checkBtn").onclick = () => {
+    if (state.answered) return;
+    const ok = evaluate();
+    if (ok) lockQuestion();
+  };
+
+  $("nextBtn").onclick = () => {
+    if (state.index < total - 1) {
+      state.index += 1;
+      setProgress(state.index + 1, total);
+      renderQuestion();
+    } else {
+      $("prompt").textContent = "Lesson complete!";
+      $("subtitle").textContent = "You finished every item in this lesson.";
+      $("typeLabel").textContent = "";
+      $("exercise").innerHTML = `
+        <div style="text-align:center;padding:28px 10px;">
+          <div style="font-size:54px;margin-bottom:10px;">🎉</div>
+          <h3 style="margin:0 0 10px;font-size:28px;">Nice work.</h3>
+          <p style="margin:0;color:var(--muted);line-height:1.7;">Go back to the course page or open the dictionary.</p>
+        </div>
+      `;
+      $("feedback").className = "feedback";
+      $("explanation").className = "explanation";
+      $("checkBtn").classList.add("hidden");
+      $("nextBtn").classList.add("hidden");
+      setProgress(total, total);
+    }
+  };
+
+  renderQuestion();
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  renderIndex();
+  renderCoursePage();
+  renderDictionaryPage();
+  renderLessonPage();
+});

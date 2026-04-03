@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson | LingsNiche</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="shell">
+    <div class="topnav">
+      <a class="back" href="course.html?course=ancient-egyptian">← Back to course</a>
+      <div class="badge" id="lessonBadge">Lesson</div>
+    </div>
+
+    <section class="card header">
+      <div class="course-row">
+        <div>
+          <h1 class="course-title" id="courseTitle">Lesson</h1>
+          <div class="meta" id="lessonTitle">Loading…</div>
+        </div>
+        <div class="progress-wrap">
+          <div class="small" id="progressText">0 / 0</div>
+          <div class="progress"><div id="progressBar"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card main">
+      <div class="question-head">
+        <div>
+          <div class="question-index" id="questionIndex">Question 1</div>
+          <h2 class="prompt" id="prompt">Loading…</h2>
+          <p class="subtitle" id="subtitle"></p>
+        </div>
+        <div class="small" id="typeLabel"></div>
+      </div>
+
+      <div class="exercise" id="exercise"></div>
+
+      <div class="feedback" id="feedback"></div>
+      <div class="explanation" id="explanation"></div>
+
+      <div class="footer-actions">
+        <a class="btn ghost" href="index.html">Choose another course</a>
+        <div class="actions">
+          <button class="btn primary" id="checkBtn">Check</button>
+          <button class="btn secondary hidden" id="nextBtn">Next</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

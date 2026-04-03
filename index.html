@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LingsNiche</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="sticky">
+    <div class="topbar wrap">
+      <div class="brand"><div class="logo">◆</div> LingsNiche</div>
+      <div class="nav-links">
+        <a href="index.html">Courses</a>
+        <a href="dictionary.html?course=ancient-egyptian">Dictionary</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-card">
+        <div class="eyebrow">⚡ Static Duolingo-style practice</div>
+        <h1>Learn Ancient Egyptian with hieroglyphs, translation, and instant feedback.</h1>
+        <p>
+          This version is focused on a single Ancient Egyptian course, with a separate course page,
+          a lesson page, and a hieroglyph dictionary.
+        </p>
+        <div class="cta-row">
+          <a class="btn primary" href="course.html?course=ancient-egyptian">Open the course</a>
+          <a class="btn secondary" href="lesson.html?course=ancient-egyptian&lesson=basics-1">Start lesson 1</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="course-wrap" id="courses">
+      <div class="section-title">
+        <div>
+          <h2>Courses</h2>
+          <p>For now there is one course, but the structure supports more later.</p>
+        </div>
+      </div>
+
+      <div class="grid" id="courseGrid"></div>
+    </section>
+  </main>
+
+  <footer class="wrap" style="padding-bottom:30px;color:var(--muted);font-size:13px;">
+    Edit <code>app.js</code> to add more courses or lessons.
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

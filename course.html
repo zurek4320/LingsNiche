@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Course | LingsNiche</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="sticky">
+    <div class="topbar wrap">
+      <a class="back" href="index.html">← Back to courses</a>
+      <div class="nav-links">
+        <a href="lesson.html?course=ancient-egyptian&lesson=basics-1">Lesson 1</a>
+        <a id="dictionaryLink" href="dictionary.html?course=ancient-egyptian">Dictionary</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="card page-card stack">
+      <div class="badge" id="courseBadge">Course</div>
+      <div>
+        <h1 class="course-title" id="courseTitle">Loading…</h1>
+        <p class="lead" id="courseIntro"></p>
+      </div>
+
+      <div>
+        <div class="section-title">
+          <div>
+            <h2>Lessons</h2>
+            <p>Open a lesson to start practice.</p>
+          </div>
+        </div>
+        <ul class="lesson-list" id="lessonList"></ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
