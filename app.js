@@ -227,11 +227,15 @@ const courses = {
 };
 
 const hieroglyphDictionary = [
-  { glyph: "𓇳", translit: "rꜥ", meaning: "sun", note: "A beginner sign used in lesson 1." },
-  { glyph: "𓄤", translit: "nfr", meaning: "good / beautiful", note: "A common adjective for early lessons." },
-  { glyph: "𓇋𓈖𓎡", translit: "ink", meaning: "I", note: "Independent pronoun: ‘I’." },
-  { glyph: "𓂋𓈖", translit: "rn", meaning: "name", note: "Useful later for introductions." },
-  { glyph: "𓉐", translit: "pr", meaning: "house", note: "Useful later for possession: pr.i = my house." }
+  { glyph: "𓂋𓂝𓇳", translit: "rꜥ", meaning: "sun", note: "Lesson 1: first words" },
+  { glyph: "𓄤", translit: "nfr", meaning: "good / beautiful", note: "Lesson 1: first words" },
+  { glyph: "𓇋𓈖𓎡", translit: "ink", meaning: "I", note: "Lesson 1: first words" },
+  { glyph: "𓉔𓏏𓊪", translit: "Htp", meaning: "hi", note: "Lesson 2: greeting" },
+  { glyph: "𓏇𓇋𓅱𓃠", translit: "miw", meaning: "cat (feminine)", note: "Lesson 2: noun" },
+  { glyph: "𓅓𓂋", translit: "mr", meaning: "to like", note: "Lesson 2: verb" },
+  { glyph: "𓉐𓏤", translit: "pr", meaning: "house", note: "Lesson 3: noun" },
+  { glyph: "𓂋𓈖", translit: "rn", meaning: "name", note: "Lesson 3: noun" },
+  { glyph: "𓀀/𓇋", translit: "i", meaning: "my", note: "Lesson 3: first person pronoun marker" }
 ];
 
 const $ = (id) => document.getElementById(id);
