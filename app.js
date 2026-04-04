@@ -607,7 +607,6 @@ const courses = {  "ancient-egyptian": {    title: "Ancient Egyptian basics",
       "words": ["𓄿𓏏", "𓂋𓂝𓇳", "𓅓𓂋𓎡", "𓏏𓊪"],
       "explanation": "𓄿𓏏𓂋𓂝𓇳 (it ra) means \"what is the sun\""
     },
-          },
           {
             type: "info",
             title: "New word: 𓈖𓏏+𓎡/𓏏/𓍿 - you",
