@@ -603,7 +603,7 @@ const courses = {  "ancient-egyptian": {    title: "Ancient Egyptian basics",
       "prompt": "Translate into Ancient Egyptian hieroglyphs.",
       "subtitle": "Build the hieroglyph sentence from the blocks.",
       "source": "What is the sun?",
-      "answer": ["𓄿𓏏", "𓂋𓂝𓇳?"],
+      "answer": ["𓄿𓏏", "𓂋𓂝𓇳"],
       "words": ["𓄿𓏏", "𓂋𓂝𓇳", "𓅓𓂋𓎡", "𓏏𓊪"],
       "explanation": "𓄿𓏏𓂋𓂝𓇳 (it ra) means \"what is the sun\""
     },
