@@ -472,7 +472,6 @@ const hieroglyphDictionary = [
   { glyph: "𓅨𓂋𓏏", translit: "wrt", meaning: "very", note: "Lesson 5: adverb" },
 
   // Lesson 6
-  // Lesson 6
   { glyph: "𓇆", translit: "w3ḏ", meaning: "green", note: "Lesson 6: adjective" },
   { glyph: "𓇐𓅓𓆰", translit: "sm", meaning: "plant", note: "Lesson 6: noun" },
   { glyph: "𓅓", translit: "m", meaning: "in", note: "Lesson 6: preposition" },
