@@ -439,6 +439,72 @@ const courses = {
             explanation: "𓇋𓏏𓂋 𓁶𓏤 𓇐𓅓𓆰𓅱 𓇆𓅱 means 'Red is on green plants.'"
           }
         ]
+      },
+      "basics-7": {
+  title: "Not good, not sweet",
+  intro: "You will review how to negate sentences using 𓈖 (n) and 𓈖𓈖 (nn). No new vocabulary, just grammar!",
+  questions: [
+    {
+      type: "info",
+      title: "Ancient Egyptian grammar",
+      text: "Negation with 𓈖 (n)",
+      example: "𓈖 𓂋𓂝𓇳𓄤 (n ra nfr) - The sun is not beautiful",
+      explanation: "To negate a sentence, you put 𓈖 (n) at the beginning. It works like 'not'."
+    },
+    {
+      type: "info",
+      title: "Ancient Egyptian grammar",
+      text: "Stronger negation with 𓈖𓈖 (nn)",
+      example: "𓈖𓈖 𓊪𓈖𓇛𓅓 (nn pn nDm) - This is not sweet",
+      explanation: "𓈖𓈖 (nn) is a stronger negation. It can mean 'is not' or 'there is not'."
+    },
+    {
+      type: "match",
+      prompt: "Match the negated sentence with its meaning.",
+      subtitle: "Practice recognizing negation.",
+      pairs: [
+        ["𓈖 𓂋𓂝𓇳𓄤", "The sun is not beautiful"],
+        ["𓈖𓈖 𓊪𓈖𓇛𓅓", "This is not sweet"]
+      ],
+      explanation: ""
+    },
+    {
+      type: "blocks",
+      prompt: "Translate into English.",
+      subtitle: "Build the English sentence.",
+      source: "𓈖 𓇋𓈖𓎡 𓄤",
+      answer: ["I", "am", "not", "good"],
+      words: ["I", "am", "not", "good", "sun", "beautiful"],
+      explanation: "𓈖 𓇋𓈖𓎡 𓄤 (n ink nfr) means 'I am not good.'"
+    },
+    {
+      type: "blocks",
+      prompt: "Translate into Ancient Egyptian hieroglyphs.",
+      subtitle: "Build the hieroglyph sentence.",
+      source: "This is not sweet.",
+      answer: ["𓈖", "𓊪𓈖", "𓇛𓅓"],
+      words: ["𓈖", "𓈖𓈖", "𓊪𓈖", "𓇛𓅓", "𓄤"],
+      explanation: "𓈖 𓊪𓈖𓇛𓅓 (n pn nDm) means 'This is not sweet.'"
+    },
+    {
+      type: "blocks",
+      prompt: "Translate into Ancient Egyptian hieroglyphs.",
+      subtitle: "Build the hieroglyph sentence.",
+      source: "The sun is not beautiful.",
+      answer: ["𓈖", "𓂋𓂝𓇳", "𓄤"],
+      words: ["𓈖", "𓂋𓂝𓇳", "𓄤", "𓇋𓈖𓎡"],
+      explanation: "𓈖 𓂋𓂝𓇳𓄤 (n ra nfr) means 'The sun is not beautiful.'"
+    },
+    {
+      type: "blocks",
+      prompt: "Translate into English.",
+      subtitle: "Build the English sentence.",
+      source: "𓈖𓈖 𓏏𓈖 𓏇𓇋𓅱𓃠",
+      answer: ["This", "is", "not", "a", "cat"],
+      words: ["This", "is", "not", "a", "cat", "fish", "good"],
+      explanation: "𓈖𓈖 𓏏𓈖 𓏇𓇋𓅱𓃠 (nn tn miw) means 'This is not a cat.'"
+    }
+  ]
       }
     }
   }
@@ -478,6 +544,10 @@ const hieroglyphDictionary = [
   { glyph: "𓇋𓏏𓂋", translit: "dšr", meaning: "red", note: "Lesson 6: adjective" },
   { glyph: "𓁶𓏤", translit: "tp", meaning: "on / on top", note: "Lesson 6: preposition" },
   { glyph: "𓈙𓈇𓏤", translit: "š", meaning: "pool / lake", note: "Lesson 6: noun" }
+
+// Lesson 7
+  { glyph: "𓈖", translit: "n", meaning: "not (basic negation, denying action)", note: "Lesson 7: negation particle" },
+  { glyph: "𓈖𓈖", translit: "nn", meaning: "not / there is not (strong negation, denying existence)", note: "Lesson 7: negation particle" },
 ];
 
 const $ = (id) => document.getElementById(id);
