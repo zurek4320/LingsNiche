@@ -188,8 +188,8 @@ const courses = {
             prompt: "Match the hieroglyphs to their reading.",
             subtitle: "Tap one item on the left, then the matching item on the right and then click check.",
             pairs: [
-              ["𓄤𓏇𓇋𓅱𓃠", "nonesense, absolute bs"],
-              ["𓄤𓏏𓏇𓇋𓅱𓃠", "good cat"]
+              ["𓏇𓇋𓅱𓃠𓄤", "nonesense, absolute bs"],
+              ["𓏇𓇋𓅱𓃠𓄤𓏏", "good cat"]
             ],
             explanation: "𓏇𓇋𓅱𓃠 is feminine so you add 𓏏 to 𓄤𓏏"
           },
@@ -216,9 +216,227 @@ const courses = {
             prompt: "Translate into Ancient Egyptian hieroglyphs.",
             subtitle: "Build the hieroglyph sentence from the blocks.",
             source: "Beautiful cat",
-            answer: ["𓄤", "𓏏", "𓏇𓇋𓅱𓃠"],
+            answer: ["𓏇𓇋𓅱𓃠", "𓄤", "𓏏"],
             words: ["𓇋", "𓏏", "𓇋𓈖𓎡", "𓄤", "𓏇𓇋𓅱𓃠"],
             explanation: "𓏇𓇋𓅱𓃠 means cat and 𓄤 means beautiful/good. The word cat is feminine so you add 𓏏 at the end of the adjcetive (𓄤)"
+          }
+        ]
+      },
+      "basics-4": {
+        title: "Many fish swim",
+        intro: "You will learn new vocab and new adjective endings",
+        questions: [
+          {
+            type: "info",
+            title: "New word: 𓂋𓅓𓆟 - fish",
+            text: "𓂋𓅓𓆟 (rm)",
+            example: "𓈖𓃀𓁶𓂋𓅓𓅱𓆟𓆈𓄿𓏥𓅱 (nbi rmu ysha, IPA: nbi rmu ʿš3) - Many fish swim",
+            explanation: "This word is written with 2 glyphs that represend sounds and 1 that represent meaning."
+          },
+          {
+            type: "info",
+            title: "New word: 𓈖𓃀𓁶 - to swim",
+            text: "𓈖𓃀𓁶 (nbi)",
+            example: "𓈖𓃀𓁶𓂋𓅓𓅱𓆟𓆈𓄿𓏥𓅱 (nbi rmu ysha, IPA: nbi rmu ʿš3) - Many fish swim",
+            explanation: "This word is written with 2 glyphs that represend sounds and 1 that represent meaning."
+          },
+          {
+            type: "info",
+            title: "Ancient Egyptian grammar",
+            text: "Plural adjective endings",
+            example: "𓂋𓅓𓅱𓆟𓄤𓅱 (good fish (pl.))",
+            explanation: "Plural masculine adjective ending is 𓅱/𓏲 (w) and feminine 𓅱𓏏/𓏏 - wt/t (only 𓏏 if 𓅱 is already at the end)"
+          },
+          {
+            type: "blocks",
+            prompt: "Translate into Ancient Egyptian hieroglyphs.",
+            subtitle: "Build the hieroglyph sentence from the blocks.",
+            source: "I like good fish (pl.).",
+            answer: ["𓅓𓂋", "𓀀", "𓂋𓅓𓅱𓆟", "𓄤", "𓅱"],
+            words: ["𓅓𓂋", "𓉐𓏤", "𓅱", "𓇋𓈖𓎡", "𓀀", "𓏇𓇋𓅱𓃠", "𓄤", "𓂋𓅓𓅱𓆟", "𓂋𓅓𓆟"],
+            explanation: "The answer is 𓅓𓂋𓀀𓂋𓅓𓅱𓆟𓄤𓅱 (mr.i rmu nfru), 𓅓𓂋 means to like, 𓀀 means I, 𓄤𓅱 means good (pl. masc.) and 𓂋𓅓𓅱𓆟 means fish (pl.)."
+          },
+          {
+            type: "blocks",
+            prompt: "Translate into Ancient Egyptian hieroglyphs.",
+            subtitle: "Build the hieroglyph sentence from the blocks.",
+            source: "Beautiful cats swim (pl.).",
+            answer: ["𓈖𓃀𓁶", "𓏇𓇋𓅱𓏏𓃠", "𓄤", "𓅱𓏏"],
+            words: ["𓈖𓃀𓁶", "𓅱𓏏", "𓅱", "𓇋𓈖𓎡", "𓏇𓇋𓅱𓏏𓃠", "𓏇𓇋𓅱𓃠", "𓄤", "𓂋𓅓𓅱𓆟", "𓂋𓅓𓆟"],
+            explanation: "The answer is 𓈖𓃀𓁶𓏇𓇋𓅱𓏏𓃠𓄤𓅱𓏏 (nbi miwt nfrut), 𓈖𓃀𓁶 means to swim, 𓄤𓅱𓏏 means beautiful/good (feminine plural) and 𓏇𓇋𓅱𓏏𓃠 means cats."
+          },
+          {
+            type: "info",
+            title: "New word: 𓆈𓄿𓏥 - many, numerous",
+            text: "𓆈𓄿𓏥 (~ysha, IPA: ʿš3)",
+            example: "𓈖𓃀𓁶𓂋𓅓𓅱𓆟𓆈𓄿𓏥𓅱 (nbi rmu ysha, IPA: nbi rmu ʿš3) - Many fish swim",
+            explanation: "This word is written with 2 glyphs that represend sounds (1 that represent multiple letters) and 1 that represent meaning."
+          },
+          {
+            type: "blocks",
+            prompt: "Translate into Ancient Egyptian hieroglyphs.",
+            subtitle: "Build the hieroglyph sentence from the blocks.",
+            source: "Many fish swim (pl.).",
+            answer: ["𓈖𓃀𓁶", "𓂋𓅓𓅱𓆟", "𓆈𓄿𓏥", "𓅱"],
+            words: ["𓈖𓃀𓁶", "𓅱𓏏", "𓅱", "𓇋𓈖𓎡", "𓂋𓅓𓆟", "𓏇𓇋𓅱𓃠", "𓄤", "𓂋𓅓𓅱𓆟", "𓆈𓄿𓏥"],
+            explanation: "The answer is 𓈖𓃀𓁶𓏇𓇋𓅱𓏏𓃠𓄤𓅱𓏏 (nbi miwt nfrut), 𓈖𓃀𓁶 means to swim, 𓄤𓅱𓏏 means beautiful/good (feminine plural) and 𓏇𓇋𓅱𓏏𓃠 means cats."
+          }
+        ]
+      },
+      "basics-5": {
+        title: "It is so pleasant",
+        intro: "You will learn new vocabulary",
+        questions: [
+          {
+            type: "info",
+            title: "New word: 𓊪𓈖 - this (masc.)",
+            text: "𓊪𓈖 (pn)",
+            example: "𓇓𓅱𓂋𓅓𓆟 (pn rm) - This is a fish",
+            explanation: "This word is written with 2 letters."
+          },
+          {
+            type: "info",
+            title: "New word: 𓏏𓈖 - this (fem.)",
+            text: "𓏏𓈖 (tn)",
+            example: "𓏏𓈖𓏇𓇋𓅱𓃠 (tn miw) - This is a cat",
+            explanation: "This word is written with 2 letters."
+          },
+          {
+            type: "info",
+            title: "New word: 𓇛𓅓 - sweet, pleasant",
+            text: "𓇛𓅓 (nDm)",
+            example: "𓊪𓈖𓇛𓅓 (pn nDm) - This is sweet",
+            explanation: "This word is written with 2 glyphs, 1 is a single letter and another makes sound of 2 letters."
+          },
+          {
+            type: "blocks",
+            prompt: "Translate into Ancient Egyptian hieroglyphs.",
+            subtitle: "Build the hieroglyph sentence from the blocks.",
+            source: "This is a cat.",
+            answer: ["𓏏𓈖", "𓏇𓇋𓅱𓃠"],
+            words: ["𓂋𓂝𓇳", "𓊪𓈖", "𓅱", "𓏏𓈖", "𓀀", "𓏇𓇋𓅱𓃠", "𓄤"],
+            explanation: "The answer is 𓏏𓈖𓏇𓇋𓅱𓃠 (tn miw), 𓏏𓈖 means this (feminine), 𓊪𓈖 means this (masculine) and 𓏇𓇋𓅱𓃠 means cat."
+          },
+          {
+            type: "blocks",
+            prompt: "Translate into Ancient Egyptian hieroglyphs.",
+            subtitle: "Build the hieroglyph sentence from the blocks.",
+            source: "This is sweet.",
+            answer: ["𓊪𓈖", "𓇛𓅓"],
+            words: ["𓇛𓅓", "𓅱𓏏", "𓅱", "𓇋𓈖𓎡", "𓊪𓈖", "𓏇𓇋𓅱𓃠", "𓄤", "𓂋𓅓𓅱𓆟", "𓂋𓅓𓆟"],
+            explanation: "The answer is 𓊪𓈖𓇛𓅓 (pn nDm), 𓊪𓈖 means this (masc) and 𓇛𓅓 means sweet, pleasant."
+          },
+          {
+            type: "info",
+            title: "New word: 𓅨𓂋𓏏 - very",
+            text: "𓅨𓂋𓏏 (wrt)",
+            example: "𓅨𓂋𓏏𓇛𓅓 (wrt nDm) - very sweet",
+            explanation: "This word is written with 3 glyphs, 2 is are single letters and another makes sound of 2 letters but here it only is used for the beggining of it's sound (w instead if wr as 𓂋 is used for r here)."
+          },
+          {
+            type: "blocks",
+            prompt: "Translate into Ancient Egyptian hieroglyphs.",
+            subtitle: "Build the hieroglyph sentence from the blocks.",
+            source: "This is so pleasant.",
+            answer: ["𓊪𓈖", "𓅨𓂋𓏏", "𓇛𓅓"],
+            words: ["𓇛𓅓", "𓅨𓂋𓏏", "𓅱", "𓇋𓈖𓎡", "𓏇𓇋𓅱𓏏𓃠", "𓏏𓈖", "𓊪𓈖", "𓂋𓅓𓅱𓆟", "𓂋𓅓𓆟"],
+            explanation: "The answer is 𓊪𓈖𓇛𓅓 (pn wrt nDm), 𓊪𓈖 means this (masc), 𓅨𓂋𓏏 means very and 𓇛𓅓 means sweet, pleasant."
+          },
+        ]
+      },
+      "basics-6": {
+        title: "Red on green plants",
+        intro: "You will learn new vocabulary",
+        questions: [
+          {
+            type: "info",
+            title: "New word: 𓇆 - green",
+            text: "𓇆 (w3ḏ)",
+            example: "𓇐𓅓𓆰𓅱 𓇆𓅱 (smw w3ḏw) - green plants",
+            explanation: "𓇆 means green. In plural, adjectives take ending 𓅱."
+          },
+          {
+            type: "info",
+            title: "New word: 𓇐𓅓𓆰 - plant",
+            text: "𓇐𓅓𓆰 (sm)",
+            example: "𓇐𓅓𓆰𓅱 (smw) - plants",
+            explanation: "𓇐𓅓𓆰 means plant. Plural is formed with 𓅱."
+          },
+          {
+            type: "match",
+            prompt: "Match the hieroglyphs to their meaning.",
+            subtitle: "Tap one item on the left, then the matching item on the right.",
+            pairs: [
+              ["𓇆", "green"],
+              ["𓇐𓅓𓆰", "plant"]
+            ],
+            explanation: ""
+          },
+          {
+            type: "info",
+            title: "New word: 𓅓 - in",
+            text: "𓅓 (m)",
+            example: "𓂋𓅓𓆟𓅱 𓅓 𓈙𓈇𓏤 (rmu m š) - fish in a lake",
+            explanation: "𓅓 is a preposition meaning 'in'."
+          },
+          {
+            type: "info",
+            title: "New word: 𓈙𓈇𓏤 - lake",
+            text: "𓈙𓈇𓏤 (š)",
+            example: "𓅓 𓈙𓈇𓏤 (m š) - in a lake",
+            explanation: "𓈙𓈇𓏤 means pool or lake."
+          },
+          {
+            type: "match",
+            prompt: "Match the hieroglyphs to their meaning.",
+            subtitle: "Practice the new words.",
+            pairs: [
+              ["𓅓", "in"],
+              ["𓈙𓈇𓏤", "lake"]
+            ],
+            explanation: ""
+          },
+          {
+            type: "info",
+            title: "New word: 𓇋𓏏𓂋 - red",
+            text: "𓇋𓏏𓂋 (desher)",
+            example: "𓇋𓏏𓂋 𓁶𓏤 𓇐𓅓𓆰𓅱 (desher tp smw) - red on plants",
+            explanation: "𓇋𓏏𓂋 means red. It is associated with life, chaos, and power."
+          },
+          {
+            type: "info",
+            title: "New word: 𓁶𓏤 - on top",
+            text: "𓁶𓏤 (tp)",
+            example: "𓁶𓏤 𓇐𓅓𓆰𓅱 (tp smw) - on plants",
+            explanation: "𓁶𓏤 means on or on top of something."
+          },
+          {
+            type: "match",
+            prompt: "Match the hieroglyphs to their meaning.",
+            subtitle: "Final vocab check.",
+            pairs: [
+              ["𓇋𓏏𓂋", "red"],
+              ["𓁶𓏤", "on top"]
+            ],
+            explanation: ""
+          },
+          {
+            type: "blocks",
+            prompt: "Translate into English.",
+            subtitle: "Build the English sentence.",
+            source: "𓈖𓃀𓁶 𓂋𓅓𓆟𓅱 𓅓 𓈙𓈇𓏤",
+            answer: ["Fish", "swim", "in", "a", "lake"],
+            words: ["Fish", "swim", "in", "a", "lake", "plants", "red"],
+            explanation: "𓈖𓃀𓁶 𓂋𓅓𓆟𓅱 𓅓 𓈙𓈇𓏤 means 'Fish swim in a lake.'"
+          },
+          {
+            type: "blocks",
+            prompt: "Translate into English.",
+            subtitle: "Build the English sentence.",
+            source: "𓇋𓏏𓂋 𓁶𓏤 𓇐𓅓𓆰𓅱 𓇆𓅱",
+            answer: ["Red", "is", "on", "green", "plants"],
+            words: ["Red", "is", "on", "green", "plants", "fish", "lake"],
+            explanation: "𓇋𓏏𓂋 𓁶𓏤 𓇐𓅓𓆰𓅱 𓇆𓅱 means 'Red is on green plants.'"
           }
         ]
       }
@@ -227,15 +445,40 @@ const courses = {
 };
 
 const hieroglyphDictionary = [
+  // Lesson 1
   { glyph: "𓂋𓂝𓇳", translit: "rꜥ", meaning: "sun", note: "Lesson 1: first words" },
   { glyph: "𓄤", translit: "nfr", meaning: "good / beautiful", note: "Lesson 1: first words" },
   { glyph: "𓇋𓈖𓎡", translit: "ink", meaning: "I", note: "Lesson 1: first words" },
-  { glyph: "𓉔𓏏𓊪", translit: "Htp", meaning: "hi", note: "Lesson 2: greeting" },
+
+  // Lesson 2
+  { glyph: "𓉔𓏏𓊪", translit: "ḥtp", meaning: "hi", note: "Lesson 2: greeting" },
   { glyph: "𓏇𓇋𓅱𓃠", translit: "miw", meaning: "cat (feminine)", note: "Lesson 2: noun" },
   { glyph: "𓅓𓂋", translit: "mr", meaning: "to like", note: "Lesson 2: verb" },
+
+  // Lesson 3
   { glyph: "𓉐𓏤", translit: "pr", meaning: "house", note: "Lesson 3: noun" },
   { glyph: "𓂋𓈖", translit: "rn", meaning: "name", note: "Lesson 3: noun" },
-  { glyph: "𓀀/𓇋", translit: "i", meaning: "my", note: "Lesson 3: first person pronoun marker" }
+  { glyph: "𓇋 / 𓀀", translit: "i", meaning: "my / I (suffix/pronoun marker)", note: "Lesson 3: grammar" },
+
+  // Lesson 4
+  { glyph: "𓂋𓅓𓆟", translit: "rm", meaning: "fish", note: "Lesson 4: noun" },
+  { glyph: "𓈖𓃀𓁶", translit: "nbi", meaning: "to swim", note: "Lesson 4: verb" },
+  { glyph: "𓆈𓄿𓏥", translit: "ʿš3", meaning: "many / numerous", note: "Lesson 4: adjective" },
+
+  // Lesson 5
+  { glyph: "𓊪𓈖", translit: "pn", meaning: "this (masculine)", note: "Lesson 5: demonstrative" },
+  { glyph: "𓏏𓈖", translit: "tn", meaning: "this (feminine)", note: "Lesson 5: demonstrative" },
+  { glyph: "𓇛𓅓", translit: "nDm", meaning: "sweet / pleasant", note: "Lesson 5: adjective" },
+  { glyph: "𓅨𓂋𓏏", translit: "wrt", meaning: "very", note: "Lesson 5: adverb" },
+
+  // Lesson 6
+  // Lesson 6
+  { glyph: "𓇆", translit: "w3ḏ", meaning: "green", note: "Lesson 6: adjective" },
+  { glyph: "𓇐𓅓𓆰", translit: "sm", meaning: "plant", note: "Lesson 6: noun" },
+  { glyph: "𓅓", translit: "m", meaning: "in", note: "Lesson 6: preposition" },
+  { glyph: "𓇋𓏏𓂋", translit: "dšr", meaning: "red", note: "Lesson 6: adjective" },
+  { glyph: "𓁶𓏤", translit: "tp", meaning: "on / on top", note: "Lesson 6: preposition" },
+  { glyph: "𓈙𓈇𓏤", translit: "š", meaning: "pool / lake", note: "Lesson 6: noun" }
 ];
 
 const $ = (id) => document.getElementById(id);
