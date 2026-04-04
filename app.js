@@ -396,10 +396,10 @@ const courses = {  "ancient-egyptian": {    title: "Ancient Egyptian basics",
           },
           {
             type: "info",
-            title: "New word: 𓇋𓏏𓂋 - red",
-            text: "𓇋𓏏𓂋 (desher)",
-            example: "𓇋𓏏𓂋 𓁶𓏤 𓇐𓅓𓆰𓅱 (desher tp smw) - red on plants",
-            explanation: "𓇋𓏏𓂋 means red. It is associated with life, chaos, and power."
+            title: "New word: 𓂧𓈙𓂋 - red",
+            text: "𓂧𓈙𓂋 (dshr, IPA: dšr)",
+            example: " 𓁶𓏤 𓇐𓅓𓆰𓅱 (dshr tp smw) - red on plants",
+            explanation: "𓂧𓈙𓂋 means red. It is associated with life, chaos, and power."
           },
           {
             type: "info",
@@ -413,7 +413,7 @@ const courses = {  "ancient-egyptian": {    title: "Ancient Egyptian basics",
             prompt: "Match the hieroglyphs to their meaning.",
             subtitle: "Final vocab check.",
             pairs: [
-              ["𓇋𓏏𓂋", "red"],
+              ["𓂧𓈙𓂋", "red"],
               ["𓁶𓏤", "on top"]
             ],
             explanation: ""
@@ -661,13 +661,26 @@ const hieroglyphDictionary = [
   { glyph: "𓇆", translit: "w3ḏ", meaning: "green", note: "Lesson 6: adjective" },
   { glyph: "𓇐𓅓𓆰", translit: "sm", meaning: "plant", note: "Lesson 6: noun" },
   { glyph: "𓅓", translit: "m", meaning: "in", note: "Lesson 6: preposition" },
-  { glyph: "𓇋𓏏𓂋", translit: "dšr", meaning: "red", note: "Lesson 6: adjective" },
+  { glyph: "𓂧𓈙𓂋", translit: "dšr", meaning: "red", note: "Lesson 6: adjective" },
   { glyph: "𓁶𓏤", translit: "tp", meaning: "on / on top", note: "Lesson 6: preposition" },
   { glyph: "𓈙𓈇𓏤", translit: "š", meaning: "pool / lake", note: "Lesson 6: noun" },
 
 // Lesson 7
   { glyph: "𓈖", translit: "n", meaning: "not (basic negation, denying action)", note: "Lesson 7: negation particle" },
-  { glyph: "𓈖𓈖", translit: "nn", meaning: "not / there is not (strong negation, denying existence)", note: "Lesson 7: negation particle" }
+  { glyph: "𓈖𓈖", translit: "nn", meaning: "not / there is not (strong negation, denying existence)", note: "Lesson 7: negation particle" },
+
+// Lesson 8
+{ glyph: "𓏏𓊪", translit: "tp", meaning: "question marker (yes/no)", note: "Lesson 8: grammar" },
+{ glyph: "𓄿𓏏", translit: "it", meaning: "what", note: "Lesson 8: question word" },
+
+// "you" independent pronouns
+{ glyph: "𓈖𓏏𓎡", translit: "ntk", meaning: "you (masculine)", note: "Lesson 8: pronoun" },
+{ glyph: "𓈖𓏏𓏏", translit: "ntt", meaning: "you (feminine)", note: "Lesson 8: pronoun" },
+{ glyph: "𓈖𓏏𓍿", translit: "ntT", meaning: "you (feminine alt.)", note: "Lesson 8: pronoun" },
+
+// verb endings for "you"
+{ glyph: "𓎡", translit: "k", meaning: "you (masc, suffix)", note: "Lesson 8: grammar" },
+{ glyph: "𓏏 / 𓍿", translit: "t / T", meaning: "you (fem, suffix)", note: "Lesson 8: grammar" }
 ];
 
 const $ = (id) => document.getElementById(id);
