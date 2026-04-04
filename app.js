@@ -546,6 +546,86 @@ const courses = {  "ancient-egyptian": {    title: "Ancient Egyptian basics",
           }
         ]
       },
+"basics-8": {
+  "title": "Asking Questions about stuff and you",
+  "intro": "You will learn to ask simple yes/no and what questions and how to say \"you\"",
+  "questions": [
+    {
+      "type": "info",
+      "title": "New word: 𓏏𓊪 - yes/no question marker",
+      "text": "𓏏𓊪 (tp)",
+      "example": "𓅓𓂋𓎡 𓏇𓇋𓅱𓏏𓃠 𓏏𓊪 - Do you (masculine) like cats?",
+      "explanation": "Place 𓏏𓊪 at the end of a sentence to turn it into a yes/no question"
+    },
+    {
+      "type": "info",
+      "title": "New word: 𓄿𓏏 - what",
+      "text": "𓄿𓏏 (it, it is read as \"it\" even though it's written as \"at\"",
+      "example": "𓄿𓏏 𓏇𓇋𓅱𓃠? - What is the cat?",
+      "explanation": "Use 𓄿𓏏 at the begining of the sentence to mark that it's a what question"
+    },
+    {
+      "type": "info",
+      "title": "Ancient Egyptian grammar",
+      "text": "you",
+      "example": "𓅓𓂋𓎡 𓏇𓇋𓅱𓏏𓃠 𓏏𓊪 - Do you (masc) like cats?\n𓅓𓂋𓍿 𓏇𓇋𓅱𓏏𓃠 𓏏𓊪 - Do you (fem) like cats?",
+      "explanation": "Similary as when in the sentence you are doing an action you add 𓇋 or 𓀀 at the end of the verb, if you want to say to someone that he is doing an action you add 𓎡 (k) at the end of the verb (𓍿(T)/𓏏(t) if it's a woman)"
+    },
+    {
+      "type": "blocks",
+      "prompt": "Translate into English.",
+      "subtitle": "Build the English sentence from the blocks.",
+      "source": "𓅓𓂋𓎡 𓏇𓇋𓅱𓏏𓃠 𓏏𓊪",
+      "answer": ["Do", "you", "like", "cats?"],
+      "words": ["Do", "you", "like", "cats?", "sun", "beautiful"],
+      "explanation": "𓅓𓂋𓎡 𓏇𓇋𓅱𓏏𓃠 𓏏𓊪 (mrk miwt tp) means do you (masc) like cats?'"
+    },
+    {
+      "type": "blocks",
+      "prompt": "Translate into Ancient Egyptian hieroglyphs.",
+      "subtitle": "Build the hieroglyph sentence from the blocks.",
+      "source": "Do you (fem) like cats?",
+      "answer": ["𓅓𓂋𓍿", "𓏇𓇋𓅱𓏏𓃠", "𓏏𓊪"],
+      "words": ["𓅓𓂋𓎡", "𓅓𓂋𓍿", "𓏇𓇋𓅱𓏏𓃠", "𓏏𓊪", "𓄿𓏏", "𓂋𓂝𓇳"],
+      "explanation": "To form yes/no questions in Egyptian, put the verb with 'you' first, then the object, and finish with 𓏏𓊪 (tp), 𓍿 and 𓏏 are feminine you form verb endings"
+    },
+    {
+      "type": "blocks",
+      "prompt": "Translate into English.",
+      "subtitle": "Build the English sentence from the blocks.",
+      "source": "𓄿𓏏 𓏇𓇋𓅱𓃠?",
+      "answer": ["What", "is", "a", "cat?"],
+      "words": ["What", "is", "a", "cat?", "Do", "you", "like"],
+      "explanation": "𓄿𓏏 𓏇𓇋𓅱𓃠? (it miw?) means \"what is a cat\""
+    },
+    {
+      "type": "blocks",
+      "prompt": "Translate into Ancient Egyptian hieroglyphs.",
+      "subtitle": "Build the hieroglyph sentence from the blocks.",
+      "source": "What is the sun?",
+      "answer": ["𓄿𓏏", "𓂋𓂝𓇳?"],
+      "words": ["𓄿𓏏", "𓂋𓂝𓇳", "𓅓𓂋𓎡", "𓏏𓊪"],
+      "explanation": "𓄿𓏏𓂋𓂝𓇳 (it ra) means \"what is the sun\""
+    },
+          },
+          {
+            type: "info",
+            title: "New word: 𓈖𓏏+𓎡/𓏏/𓍿 - you",
+            text: "𓈖𓏏+𓎡/𓏏/𓍿 (nt+k/t/T)\n𓎡 (k) - masculine, 𓏏 (t)/𓍿 (T) - feminine",
+            example: 𓈖𓏏𓎡 𓄤 (ntk nfr) - You (male) are beautiful",
+            explanation: "This word is written in a bunch of glyphs representing diffrent letters (𓈖 - n, 𓏏 - t, 𓎡/𓏏/𓍿 - k/t/T)."
+          },
+    {
+      "type": "blocks",
+      "prompt": "Translate into Ancient Egyptian hieroglyphs.",
+      "subtitle": "Build the hieroglyph sentence from the blocks.",
+      "source": "You are a cat (keep in mind that cat is a feminine noun)",
+      "answer": ["𓈖𓏏𓍿", "𓏇𓇋𓅱𓃠"],
+      "words": ["𓈖𓏏𓍿", "𓂋𓂝𓇳", "𓏇𓇋𓅱𓃠", "𓈖𓏏𓎡"],
+      "explanation": "𓈖𓏏𓍿𓏇𓇋𓅱𓃠 (ntT miw) means \"you are a cat\". 𓈖𓏏𓍿 and 𓈖𓏏𓏏 are feminine you and 𓈖𓏏𓎡 is masculine you."
+    },
+  ]
+}
     }
   }
 };
