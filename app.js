@@ -504,7 +504,7 @@ const courses = {  "ancient-egyptian": {    title: "Ancient Egyptian basics",
     }
   ]
       },
-      "story-1": {
+      "stories-1": {
         title: "Read your first story",
         intro: "In this lesson you'll read a story and answer questions about it",
         questions: [
