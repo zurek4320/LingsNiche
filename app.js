@@ -503,7 +503,49 @@ const courses = {  "ancient-egyptian": {    title: "Ancient Egyptian basics",
       explanation: "𓈖𓈖 𓏏𓈖 𓏇𓇋𓅱𓃠 (nn tn miw) means 'This is not a cat.'"
     }
   ]
-      }
+      },
+      "story-1": {
+        title: "Read your first story",
+        intro: "In this lesson you'll read a story and answer questions about it",
+        questions: [
+          {
+            type: "info",
+            title: "Hi, I'm Anna!",
+            text: "𓉔𓏏𓊪. 𓂋𓈖𓇋𓄿𓈖𓈖𓄿. 𓅓𓂋𓇋𓂋𓅓𓅱𓆟. 𓂋𓅓𓏲𓆟𓅱𓂋𓏏𓏲𓄤𓏲. 𓈖𓅓𓂋𓇋𓏇𓇋𓅱𓏏𓃠. 𓉐𓏤𓇋𓄤.",
+            example: "hint: If you add 𓇋 to a noun/verb then it will mean my/me/I as well as 𓀀 but 𓀀  is used only by men. Also 𓏲 makes a masculine noun plural just like 𓅱. If you don't know already 𓄿 is read as a and 𓈖 as n.",
+            explanation: ""
+          },
+          {
+            type: "match",
+            prompt: "Match words to sentences according to the story you just read.",
+            subtitle: "Tap one item on the left, then the matching item on the right and then click check.",
+            pairs: [
+              ["Ali", "name not existing in the story"],
+              ["Anna", "name of the main character of the story"],
+            ],
+            explanation: "𓂋𓈖𓇋𓄿𓈖𓈖𓄿 means my name is Anna"
+          },
+         {
+            type: "match",
+            prompt: "Match words to sentences according to the story you just read.",
+            subtitle: "Tap one item on the left, then the matching item on the right and then click check.",
+            pairs: [
+              ["cats", "Anna don't like them"],
+              ["fish", "Anna like them and think they are very beautiful"]
+            ],
+            explanation: "𓅓𓂋𓇋𓂋𓅓𓅱𓆟 means I like fish. 𓂋𓅓𓏲𓆟𓅱𓂋𓏏𓏲𓄤𓏲 means fish are very beautiful. 𓈖𓅓𓂋𓇋𓏇𓇋𓅱𓏏𓃠 means I don't like cats."
+          },
+          {
+            type: "blocks",
+            prompt: "Translate into English.",
+            subtitle: "Build the English sentence from the blocks.",
+            source: "𓉐𓏤𓇋𓄤",
+            answer: ["My", "house", "is", "beautiful"],
+            words: ["The", "My", "is", "beautiful", "I", "house"],
+            explanation: "𓉐𓏤𓇋𓄤 (pr.i nfr) means my house is beautiful"
+          }
+        ]
+      },
     }
   }
 };
