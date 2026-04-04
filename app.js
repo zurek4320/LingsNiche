@@ -612,7 +612,7 @@ const courses = {  "ancient-egyptian": {    title: "Ancient Egyptian basics",
             type: "info",
             title: "New word: 𓈖𓏏+𓎡/𓏏/𓍿 - you",
             text: "𓈖𓏏+𓎡/𓏏/𓍿 (nt+k/t/T)\n𓎡 (k) - masculine, 𓏏 (t)/𓍿 (T) - feminine",
-            example: 𓈖𓏏𓎡 𓄤 (ntk nfr) - You (male) are beautiful",
+            example: "𓈖𓏏𓎡 𓄤 (ntk nfr) - You (male) are beautiful",
             explanation: "This word is written in a bunch of glyphs representing diffrent letters (𓈖 - n, 𓏏 - t, 𓎡/𓏏/𓍿 - k/t/T)."
           },
     {
