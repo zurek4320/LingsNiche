@@ -1,6 +1,4 @@
-const courses = {
-  "ancient-egyptian": {
-    title: "Ancient Egyptian basics",
+const courses = {  "ancient-egyptian": {    title: "Ancient Egyptian basics",
     emoji: "𓆎𓅓𓏏",
     description: "Learn beginner hieroglyphs, transliteration, and simple sentence patterns.",
     lessons: {
@@ -543,7 +541,7 @@ const hieroglyphDictionary = [
   { glyph: "𓅓", translit: "m", meaning: "in", note: "Lesson 6: preposition" },
   { glyph: "𓇋𓏏𓂋", translit: "dšr", meaning: "red", note: "Lesson 6: adjective" },
   { glyph: "𓁶𓏤", translit: "tp", meaning: "on / on top", note: "Lesson 6: preposition" },
-  { glyph: "𓈙𓈇𓏤", translit: "š", meaning: "pool / lake", note: "Lesson 6: noun" }
+  { glyph: "𓈙𓈇𓏤", translit: "š", meaning: "pool / lake", note: "Lesson 6: noun" },
 
 // Lesson 7
   { glyph: "𓈖", translit: "n", meaning: "not (basic negation, denying action)", note: "Lesson 7: negation particle" },
