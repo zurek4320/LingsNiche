@@ -668,18 +668,18 @@ const hieroglyphDictionary = [
   { glyph: "𓈖", translit: "n", meaning: "not (basic negation, denying action)", note: "Lesson 7: negation particle" },
   { glyph: "𓈖𓈖", translit: "nn", meaning: "not / there is not (strong negation, denying existence)", note: "Lesson 7: negation particle" },
 
-// Lesson 8
-{ glyph: "𓏏𓊪", translit: "tp", meaning: "question marker (yes/no)", note: "Lesson 8: grammar" },
-{ glyph: "𓄿𓏏", translit: "it", meaning: "what", note: "Lesson 8: question word" },
+// Lesson 9
+{ glyph: "𓏏𓊪", translit: "tp", meaning: "question marker (yes/no)", note: "Lesson 9: grammar" },
+{ glyph: "𓄿𓏏", translit: "it", meaning: "what", note: "Lesson 9: question word" },
 
 // "you" independent pronouns
-{ glyph: "𓈖𓏏𓎡", translit: "ntk", meaning: "you (masculine)", note: "Lesson 8: pronoun" },
-{ glyph: "𓈖𓏏𓏏", translit: "ntt", meaning: "you (feminine)", note: "Lesson 8: pronoun" },
-{ glyph: "𓈖𓏏𓍿", translit: "ntT", meaning: "you (feminine alt.)", note: "Lesson 8: pronoun" },
+{ glyph: "𓈖𓏏𓎡", translit: "ntk", meaning: "you (masculine)", note: "Lesson 9: pronoun" },
+{ glyph: "𓈖𓏏𓏏", translit: "ntt", meaning: "you (feminine)", note: "Lesson 9: pronoun" },
+{ glyph: "𓈖𓏏𓍿", translit: "ntT", meaning: "you (feminine alt.)", note: "Lesson 9: pronoun" },
 
 // verb endings for "you"
-{ glyph: "𓎡", translit: "k", meaning: "you (masc, suffix)", note: "Lesson 8: grammar" },
-{ glyph: "𓏏 / 𓍿", translit: "t / T", meaning: "you (fem, suffix)", note: "Lesson 8: grammar" }
+{ glyph: "𓎡", translit: "k", meaning: "you (masc, suffix)", note: "Lesson 9: grammar" },
+{ glyph: "𓏏 / 𓍿", translit: "t / T", meaning: "you (fem, suffix)", note: "Lesson 9: grammar" }
 ];
 
 const $ = (id) => document.getElementById(id);
