@@ -545,7 +545,7 @@ const hieroglyphDictionary = [
 
 // Lesson 7
   { glyph: "𓈖", translit: "n", meaning: "not (basic negation, denying action)", note: "Lesson 7: negation particle" },
-  { glyph: "𓈖𓈖", translit: "nn", meaning: "not / there is not (strong negation, denying existence)", note: "Lesson 7: negation particle" },
+  { glyph: "𓈖𓈖", translit: "nn", meaning: "not / there is not (strong negation, denying existence)", note: "Lesson 7: negation particle" }
 ];
 
 const $ = (id) => document.getElementById(id);
