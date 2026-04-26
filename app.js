@@ -546,85 +546,195 @@ const courses = {  "ancient-egyptian": {    title: "Ancient Egyptian basics",
           }
         ]
       },
-"basics-8": {
-  "title": "Asking Questions about stuff and you",
-  "intro": "You will learn to ask simple yes/no and what questions and how to say \"you\"",
-  "questions": [
-    {
-      "type": "info",
-      "title": "New word: 𓏏𓊪 - yes/no question marker",
-      "text": "𓏏𓊪 (tp)",
-      "example": "𓅓𓂋𓎡 𓏇𓇋𓅱𓏏𓃠 𓏏𓊪 - Do you (masculine) like cats?",
-      "explanation": "Place 𓏏𓊪 at the end of a sentence to turn it into a yes/no question"
-    },
-    {
-      "type": "info",
-      "title": "New word: 𓄿𓏏 - what",
-      "text": "𓄿𓏏 (it, it is read as \"it\" even though it's written as \"at\"",
-      "example": "𓄿𓏏 𓏇𓇋𓅱𓃠? - What is the cat?",
-      "explanation": "Use 𓄿𓏏 at the begining of the sentence to mark that it's a what question"
-    },
-    {
-      "type": "info",
-      "title": "Ancient Egyptian grammar",
-      "text": "you",
-      "example": "𓅓𓂋𓎡 𓏇𓇋𓅱𓏏𓃠 𓏏𓊪 - Do you (masc) like cats?\n𓅓𓂋𓍿 𓏇𓇋𓅱𓏏𓃠 𓏏𓊪 - Do you (fem) like cats?",
-      "explanation": "Similary as when in the sentence you are doing an action you add 𓇋 or 𓀀 at the end of the verb, if you want to say to someone that he is doing an action you add 𓎡 (k) at the end of the verb (𓍿(T)/𓏏(t) if it's a woman)"
-    },
-    {
-      "type": "blocks",
-      "prompt": "Translate into English.",
-      "subtitle": "Build the English sentence from the blocks.",
-      "source": "𓅓𓂋𓎡 𓏇𓇋𓅱𓏏𓃠 𓏏𓊪",
-      "answer": ["Do", "you", "like", "cats?"],
-      "words": ["Do", "you", "like", "cats?", "sun", "beautiful"],
-      "explanation": "𓅓𓂋𓎡 𓏇𓇋𓅱𓏏𓃠 𓏏𓊪 (mrk miwt tp) means do you (masc) like cats?'"
-    },
-    {
-      "type": "blocks",
-      "prompt": "Translate into Ancient Egyptian hieroglyphs.",
-      "subtitle": "Build the hieroglyph sentence from the blocks.",
-      "source": "Do you (fem) like cats?",
-      "answer": ["𓅓𓂋𓍿", "𓏇𓇋𓅱𓏏𓃠", "𓏏𓊪"],
-      "words": ["𓅓𓂋𓎡", "𓅓𓂋𓍿", "𓏇𓇋𓅱𓏏𓃠", "𓏏𓊪", "𓄿𓏏", "𓂋𓂝𓇳"],
-      "explanation": "To form yes/no questions in Egyptian, put the verb with 'you' first, then the object, and finish with 𓏏𓊪 (tp), 𓍿 and 𓏏 are feminine you form verb endings"
-    },
-    {
-      "type": "blocks",
-      "prompt": "Translate into English.",
-      "subtitle": "Build the English sentence from the blocks.",
-      "source": "𓄿𓏏 𓏇𓇋𓅱𓃠?",
-      "answer": ["What", "is", "a", "cat?"],
-      "words": ["What", "is", "a", "cat?", "Do", "you", "like"],
-      "explanation": "𓄿𓏏 𓏇𓇋𓅱𓃠? (it miw?) means \"what is a cat\""
-    },
-    {
-      "type": "blocks",
-      "prompt": "Translate into Ancient Egyptian hieroglyphs.",
-      "subtitle": "Build the hieroglyph sentence from the blocks.",
-      "source": "What is the sun?",
-      "answer": ["𓄿𓏏", "𓂋𓂝𓇳"],
-      "words": ["𓄿𓏏", "𓂋𓂝𓇳", "𓅓𓂋𓎡", "𓏏𓊪"],
-      "explanation": "𓄿𓏏𓂋𓂝𓇳 (it ra) means \"what is the sun\""
-    },
+      "basics-8": {
+        "title": "Asking Questions about stuff and you",
+        "intro": "You will learn to ask simple yes/no and what questions and how to say \"you\"",
+        "questions": [
           {
-            type: "info",
-            title: "New word: 𓈖𓏏+𓎡/𓏏/𓍿 - you",
-            text: "𓈖𓏏+𓎡/𓏏/𓍿 (nt+k/t/T)\n𓎡 (k) - masculine, 𓏏 (t)/𓍿 (T) - feminine",
-            example: "𓈖𓏏𓎡 𓄤 (ntk nfr) - You (male) are beautiful",
-            explanation: "This word is written in a bunch of glyphs representing diffrent letters (𓈖 - n, 𓏏 - t, 𓎡/𓏏/𓍿 - k/t/T)."
+            "type": "info",
+            "title": "New word: 𓏏𓊪 - yes/no question marker",
+            "text": "𓏏𓊪 (tp)",
+            "example": "𓅓𓂋𓎡 𓏇𓇋𓅱𓏏𓃠 𓏏𓊪 - Do you (masculine) like cats?",
+            "explanation": "Place 𓏏𓊪 at the end of a sentence to turn it into a yes/no question"
           },
-    {
-      "type": "blocks",
-      "prompt": "Translate into Ancient Egyptian hieroglyphs.",
-      "subtitle": "Build the hieroglyph sentence from the blocks.",
-      "source": "You are a cat (keep in mind that cat is a feminine noun)",
-      "answer": ["𓈖𓏏𓍿", "𓏇𓇋𓅱𓃠"],
-      "words": ["𓈖𓏏𓍿", "𓂋𓂝𓇳", "𓏇𓇋𓅱𓃠", "𓈖𓏏𓎡"],
-      "explanation": "𓈖𓏏𓍿𓏇𓇋𓅱𓃠 (ntT miw) means \"you are a cat\". 𓈖𓏏𓍿 and 𓈖𓏏𓏏 are feminine you and 𓈖𓏏𓎡 is masculine you."
-    },
-  ]
-}
+          {
+            "type": "info",
+            "title": "New word: 𓄿𓏏 - what",
+            "text": "𓄿𓏏 (it, it is read as \"it\" even though it's written as \"at\"",
+            "example": "𓄿𓏏 𓏇𓇋𓅱𓃠? - What is the cat?",
+            "explanation": "Use 𓄿𓏏 at the begining of the sentence to mark that it's a what question"
+          },
+          {
+            "type": "info",
+            "title": "Ancient Egyptian grammar",
+            "text": "you",
+            "example": "𓅓𓂋𓎡 𓏇𓇋𓅱𓏏𓃠 𓏏𓊪 - Do you (masc) like cats?\n𓅓𓂋𓍿 𓏇𓇋𓅱𓏏𓃠 𓏏𓊪 - Do you (fem) like cats?",
+            "explanation": "Similary as when in the sentence you are doing an action you add 𓇋 or 𓀀 at the end of the verb, if you want to say to someone that he is doing an action you add 𓎡 (k) at the end of the verb (𓍿(T)/𓏏(t) if it's a woman)"
+          },
+          {
+            "type": "blocks",
+            "prompt": "Translate into English.",
+            "subtitle": "Build the English sentence from the blocks.",
+            "source": "𓅓𓂋𓎡 𓏇𓇋𓅱𓏏𓃠 𓏏𓊪",
+            "answer": ["Do", "you", "like", "cats?"],
+            "words": ["Do", "you", "like", "cats?", "sun", "beautiful"],
+            "explanation": "𓅓𓂋𓎡 𓏇𓇋𓅱𓏏𓃠 𓏏𓊪 (mrk miwt tp) means do you (masc) like cats?'"
+          },
+          {
+            "type": "blocks",
+            "prompt": "Translate into Ancient Egyptian hieroglyphs.",
+            "subtitle": "Build the hieroglyph sentence from the blocks.",
+            "source": "Do you (fem) like cats?",
+            "answer": ["𓅓𓂋𓍿", "𓏇𓇋𓅱𓏏𓃠", "𓏏𓊪"],
+            "words": ["𓅓𓂋𓎡", "𓅓𓂋𓍿", "𓏇𓇋𓅱𓏏𓃠", "𓏏𓊪", "𓄿𓏏", "𓂋𓂝𓇳"],
+            "explanation": "To form yes/no questions in Egyptian, put the verb with 'you' first, then the object, and finish with 𓏏𓊪 (tp), 𓍿 and 𓏏 are feminine you form verb endings"
+          },
+          {
+            "type": "blocks",
+            "prompt": "Translate into English.",
+            "subtitle": "Build the English sentence from the blocks.",
+            "source": "𓄿𓏏 𓏇𓇋𓅱𓃠?",
+            "answer": ["What", "is", "a", "cat?"],
+            "words": ["What", "is", "a", "cat?", "Do", "you", "like"],
+            "explanation": "𓄿𓏏 𓏇𓇋𓅱𓃠? (it miw?) means \"what is a cat\""
+          },
+          {
+            "type": "blocks",
+            "prompt": "Translate into Ancient Egyptian hieroglyphs.",
+            "subtitle": "Build the hieroglyph sentence from the blocks.",
+            "source": "What is the sun?",
+            "answer": ["𓄿𓏏", "𓂋𓂝𓇳"],
+            "words": ["𓄿𓏏", "𓂋𓂝𓇳", "𓅓𓂋𓎡", "𓏏𓊪"],
+            "explanation": "𓄿𓏏𓂋𓂝𓇳 (it ra) means \"what is the sun\""
+          },
+                {
+                  type: "info",
+                  title: "New word: 𓈖𓏏+𓎡/𓏏/𓍿 - you",
+                  text: "𓈖𓏏+𓎡/𓏏/𓍿 (nt+k/t/T)\n𓎡 (k) - masculine, 𓏏 (t)/𓍿 (T) - feminine",
+                  example: "𓈖𓏏𓎡 𓄤 (ntk nfr) - You (male) are beautiful",
+                  explanation: "This word is written in a bunch of glyphs representing diffrent letters (𓈖 - n, 𓏏 - t, 𓎡/𓏏/𓍿 - k/t/T)."
+                },
+          {
+            "type": "blocks",
+            "prompt": "Translate into Ancient Egyptian hieroglyphs.",
+            "subtitle": "Build the hieroglyph sentence from the blocks.",
+            "source": "You are a cat (keep in mind that cat is a feminine noun)",
+            "answer": ["𓈖𓏏𓍿", "𓏇𓇋𓅱𓃠"],
+            "words": ["𓈖𓏏𓍿", "𓂋𓂝𓇳", "𓏇𓇋𓅱𓃠", "𓈖𓏏𓎡"],
+            "explanation": "𓈖𓏏𓍿𓏇𓇋𓅱𓃠 (ntT miw) means \"you are a cat\". 𓈖𓏏𓍿 and 𓈖𓏏𓏏 are feminine you and 𓈖𓏏𓎡 is masculine you."
+          },
+        ]
+      }
+    }
+  },
+  "sumerian": {    title: "Sumerian basics",
+    emoji: "𒅴𒂠",
+    description: "Learn beginner cuneiform, transliteration, and simple sentence patterns.",
+    lessons: {
+        "basics-1": {
+          "title": "I am a king",
+          "intro": "You will learn basic Sumerian sentences, core grammar (SOV, A=B), simple verbs (du₃ / mu-du₃), basic cases, and essential vocabulary (king, house, I, you, this, that).",
+
+          "questions": [
+            {
+              "type": "info",
+              "title": "New word: lugal - king",
+              "text": "𒈗 (lugal)",
+              "example": "𒈗 - king",
+              "explanation": "Basic noun meaning 'king'. No endings = neutral form (absolutive)."
+            },
+            {
+              "type": "info",
+              "title": "New word: e₂ - house",
+              "text": "𒂍 (e₂)",
+              "example": "𒂍 - house",
+              "explanation": "Basic noun meaning 'house'."
+            },
+            {
+              "type": "info",
+              "title": "New word: ĝe26 - I",
+              "text": "𒂊 (ĝe26)",
+              "example": "𒂊 - I",
+              "explanation": "First person pronoun. Used as subject or with nouns (I = X)."
+            },
+            {
+              "type": "info",
+              "title": "New word: ze₂ - you",
+              "text": "𒍝 (ze₂)",
+              "example": "𒍝 - you",
+              "explanation": "Second person singular pronoun."
+            },
+            {
+              "type": "info",
+              "title": "New word: du₃ - to build",
+              "text": "𒆕 (du₃)",
+              "example": "𒆕 - to build",
+              "explanation": "Basic verb root meaning 'to build'. This is the dictionary form."
+            },
+            {
+              "type": "info",
+              "title": "Verb form: mu-du₃ - built (past/completed action)",
+              "text": "𒈬𒆕 (mu-du₃)",
+              "example": "𒈬𒆕 - he built it",
+              "explanation": "mu- is a verbal prefix marking completed or narrative past action. So yes: mu-du₃ often behaves like past tense ('built'), but Sumerian does not have true tense like English. It is aspect-based (focus on completed action, not time)."
+            },
+            {
+              "type": "info",
+              "title": "Grammar: SOV word order",
+              "text": "Subject - Object - Verb",
+              "example": "𒈗 𒂍 𒈬𒆕 - lugal e₂ mu-du₃ (The king built the house)",
+              "explanation": "Sumerian normally places the verb at the end. However, case endings also show grammatical roles, so word order is flexible."
+            },
+            {
+              "type": "info",
+              "title": "Grammar: A = B (no 'to be' verb)",
+              "text": "X Y = X is Y",
+              "example": "𒂊 𒈗 - ĝe26 lugal (I am king)",
+              "explanation": "Sumerian usually does not use a verb for 'to be'. Two nouns next to each other mean identity."
+            },
+            {
+              "type": "info",
+              "title": "New word: demonstratives - this / that",
+              "text": "𒁉 (bi) = this/that (context-dependent)",
+              "example": "𒁉 𒂍 - bi e₂ (this house / that house)",
+              "explanation": "Sumerian often uses bi to point to something near or previously mentioned. Exact meaning depends on context."
+            },
+            {
+              "type": "info",
+              "title": "Case: -e (ergative)",
+              "text": "𒂊 (e)",
+              "example": "𒈗𒂊 - lugal-e (the king as doer)",
+              "explanation": "Marks the subject of a transitive verb (the one who does the action)."
+            },
+            {
+              "type": "blocks",
+              "prompt": "Translate into English.",
+              "subtitle": "Build the English sentence from the blocks.",
+              "source": "𒈗𒂊 𒂍 𒈬𒆕 (lugal-e e₂ mu-du₃)",
+              "answer": ["The", "king", "built", "the", "house"],
+              "words": ["The", "king", "built", "the", "house", "is", "you", "this"],
+              "explanation": "𒈗𒂊 𒂍 𒈬𒆕 (lugal-e e₂ mu-du₃) follows SOV order: king-house-built."
+            },
+            {
+              "type": "blocks",
+              "prompt": "Translate into Sumerian.",
+              "subtitle": "Build the Sumerian sentence from the blocks.",
+              "source": "I am a king",
+              "answer": ["𒂊", "𒈗"],
+              "words": ["𒂊", "𒈗", "𒂍", "𒍝", "𒈬𒆕"],
+              "explanation": "A = B structure: ĝe26 lugal → I king → 'I am king'."
+            },
+            {
+              "type": "blocks",
+              "prompt": "Translate into English.",
+              "subtitle": "Build the English sentence from the blocks.",
+              "source": "𒍝𒂊 𒂍 𒈬𒆕",
+              "answer": ["you", "build", "a house"],
+              "words": ["my", "you", "his", "a house", "king", "build"],
+              "explanation": "𒍝𒂍𒈬𒆕 (ze-e e₂  mu-du₃) means \"you build a house\"."
+            }
+          ]
+        }
     }
   }
 };
@@ -680,6 +790,18 @@ const hieroglyphDictionary = [
 // verb endings for "you"
 { glyph: "𓎡", translit: "k", meaning: "you (masc, suffix)", note: "Lesson 9: grammar" },
 { glyph: "𓏏 / 𓍿", translit: "t / T", meaning: "you (fem, suffix)", note: "Lesson 9: grammar" }
+];
+
+const cuneiformDictionary = [
+  // Lesson 1
+  { glyph: "𒈗", translit: "lugal", meaning: "king", note: "Lesson 1: noun" },
+  { glyph: "𒂍", translit: "e₂", meaning: "house", note: "Lesson 1: noun" },
+  { glyph: "𒂊", translit: "ĝe26", meaning: "I", note: "Lesson 1: pronoun" },
+  { glyph: "𒍝", translit: "ze₂", meaning: "you", note: "Lesson 1: pronoun" },
+  { glyph: "𒆕", translit: "du₃", meaning: "to build", note: "Lesson 1: verb root" },
+  { glyph: "𒈬𒆕", translit: "mu-du₃", meaning: "built / has built", note: "Lesson 1: completed verb form" },
+  { glyph: "𒁉", translit: "bi", meaning: "this / that", note: "Lesson 1: demonstrative" },
+  { glyph: "-𒂊", translit: "-e", meaning: "ergative case ending (doer of action)", note: "Lesson 1: grammar" }
 ];
 
 const $ = (id) => document.getElementById(id);
@@ -780,16 +902,28 @@ function renderDictionaryPage() {
   if (!list) return;
 
   const search = $("search");
+  const egyptBtn = $("egyptBtn");
+  const sumerBtn = $("sumerBtn");
+
+  let currentDict = hieroglyphDictionary;
+
+  function setActive(btn) {
+    egyptBtn.classList.remove("active");
+    sumerBtn.classList.remove("active");
+    btn.classList.add("active");
+  }
+
   const render = () => {
     const term = (search?.value || "").trim().toLowerCase();
-    const filtered = hieroglyphDictionary.filter(entry => {
+
+    const filtered = currentDict.filter(entry => {
       const haystack = `${entry.glyph} ${entry.translit} ${entry.meaning} ${entry.note}`.toLowerCase();
       return haystack.includes(term);
     });
 
     list.innerHTML = filtered.map(entry => `
       <article class="dict-card">
-        <div class="glyph" lang="egy">${entry.glyph}</div>
+        <div class="glyph">${entry.glyph}</div>
         <h3>${entry.meaning}</h3>
         <p><strong>${entry.translit}</strong></p>
         <p>${entry.note}</p>
@@ -797,7 +931,20 @@ function renderDictionaryPage() {
     `).join("") || `<p class="small">No matches.</p>`;
   };
 
+  egyptBtn?.addEventListener("click", () => {
+    currentDict = hieroglyphDictionary;
+    setActive(egyptBtn);
+    render();
+  });
+
+  sumerBtn?.addEventListener("click", () => {
+    currentDict = cuneiformDictionary;
+    setActive(sumerBtn);
+    render();
+  });
+
   search?.addEventListener("input", render);
+
   render();
 }
 
@@ -806,6 +953,10 @@ function renderLessonPage() {
   if (!exercise) return;
 
   const { courseId, lessonId } = getParams();
+  const backBtn = $("backToCourse");
+  if (backBtn) {
+      backBtn.href = `course.html?course=${encodeURIComponent(courseId)}`;
+  }
   const course = courses[courseId];
   const lesson = course?.lessons?.[lessonId];
 
