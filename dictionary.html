@@ -3,16 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hieroglyph Dictionary | LingsNiche</title>
+  <title>Dictionary | LingsNiche</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+
 </head>
+
 <body>
   <header class="sticky">
     <div class="topbar wrap">
-      <a class="back" href="course.html?course=ancient-egyptian">← Back to course</a>
+      <a class="back" href="index.html">← Back to course</a>
+
       <div class="nav-links">
         <a href="index.html">Courses</a>
         <a href="lesson.html?course=ancient-egyptian&lesson=basics-1">Lesson 1</a>
@@ -22,20 +26,36 @@
 
   <main class="page">
     <section class="card page-card stack">
-      <div class="badge">𓆎𓅓𓏏 Hieroglyphs dictionary</div>
+
+      <div class="badge">📖 Dictionary</div>
+
       <div>
-        <h1 class="course-title">Dictionary</h1>
+        <h1 class="course-title">Script Dictionary</h1>
         <p class="lead">
-          A simple reference page for the signs used in your beginner lesson. Search by glyph,
-          transliteration, or meaning.
+          Switch between Ancient Egyptian hieroglyphs and Sumerian cuneiform.
+          Search by glyph, transliteration, or meaning.
         </p>
       </div>
 
-      <div class="filter-row">
-        <input id="search" class="search" type="search" placeholder="Search glyphs, transliteration, or meaning…">
+      <!-- SWITCH BUTTONS -->
+      <div class="dict-switch">
+        <button id="egyptBtn" class="dict-btn active">𓆎𓅓𓏏 Egyptian</button>
+        <button id="sumerBtn" class="dict-btn">𒅴𒂠 Sumerian</button>
       </div>
 
+      <!-- SEARCH -->
+      <div class="filter-row">
+        <input
+          id="search"
+          class="search"
+          type="search"
+          placeholder="Search glyphs, transliteration, or meaning…"
+        >
+      </div>
+
+      <!-- RESULTS -->
       <div class="dictionary-grid" id="dictionaryGrid"></div>
+
     </section>
   </main>
 
