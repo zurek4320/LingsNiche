@@ -632,107 +632,82 @@ const courses = {  "ancient-egyptian": {    title: "Ancient Egyptian basics",
     description: "Learn beginner cuneiform, transliteration, and simple sentence patterns.",
     lessons: {
         "basics-1": {
-          "title": "I am a king",
-          "intro": "You will learn basic Sumerian sentences, core grammar (SOV, A=B), simple verbs (du₃ / mu-du₃), basic cases, and essential vocabulary (king, house, I, you, this, that).",
+          "title": "First words",
+          "intro": "You will learn basic Sumerian words and grammar.",
 
           "questions": [
-            {
-              "type": "info",
-              "title": "New word: lugal - king",
-              "text": "𒈗 (lugal)",
-              "example": "𒈗 - king",
-              "explanation": "Basic noun meaning 'king'. No endings = neutral form (absolutive)."
-            },
-            {
-              "type": "info",
-              "title": "New word: e₂ - house",
-              "text": "𒂍 (e₂)",
-              "example": "𒂍 - house",
-              "explanation": "Basic noun meaning 'house'."
-            },
-            {
-              "type": "info",
-              "title": "New word: ĝe26 - I",
-              "text": "𒂊 (ĝe26)",
-              "example": "𒂊 - I",
-              "explanation": "First person pronoun. Used as subject or with nouns (I = X)."
-            },
-            {
-              "type": "info",
-              "title": "New word: ze₂ - you",
-              "text": "𒍝 (ze₂)",
-              "example": "𒍝 - you",
-              "explanation": "Second person singular pronoun."
-            },
-            {
-              "type": "info",
-              "title": "New word: du₃ - to build",
-              "text": "𒆕 (du₃)",
-              "example": "𒆕 - to build",
-              "explanation": "Basic verb root meaning 'to build'. This is the dictionary form."
-            },
-            {
-              "type": "info",
-              "title": "Verb form: mu-du₃ - built (past/completed action)",
-              "text": "𒈬𒆕 (mu-du₃)",
-              "example": "𒈬𒆕 - he built it",
-              "explanation": "mu- is a verbal prefix marking completed or narrative past action. So yes: mu-du₃ often behaves like past tense ('built'), but Sumerian does not have true tense like English. It is aspect-based (focus on completed action, not time)."
-            },
-            {
-              "type": "info",
-              "title": "Grammar: SOV word order",
-              "text": "Subject - Object - Verb",
-              "example": "𒈗 𒂍 𒈬𒆕 - lugal e₂ mu-du₃ (The king built the house)",
-              "explanation": "Sumerian normally places the verb at the end. However, case endings also show grammatical roles, so word order is flexible."
-            },
-            {
-              "type": "info",
-              "title": "Grammar: A = B (no 'to be' verb)",
-              "text": "X Y = X is Y",
-              "example": "𒂊 𒈗 - ĝe26 lugal (I am king)",
-              "explanation": "Sumerian usually does not use a verb for 'to be'. Two nouns next to each other mean identity."
-            },
-            {
-              "type": "info",
-              "title": "New word: demonstratives - this / that",
-              "text": "𒁉 (bi) = this/that (context-dependent)",
-              "example": "𒁉 𒂍 - bi e₂ (this house / that house)",
-              "explanation": "Sumerian often uses bi to point to something near or previously mentioned. Exact meaning depends on context."
-            },
-            {
-              "type": "info",
-              "title": "Case: -e (ergative)",
-              "text": "𒂊 (e)",
-              "example": "𒈗𒂊 - lugal-e (the king as doer)",
-              "explanation": "Marks the subject of a transitive verb (the one who does the action)."
-            },
-            {
-              "type": "blocks",
-              "prompt": "Translate into English.",
-              "subtitle": "Build the English sentence from the blocks.",
-              "source": "𒈗𒂊 𒂍 𒈬𒆕 (lugal-e e₂ mu-du₃)",
-              "answer": ["The", "king", "built", "the", "house"],
-              "words": ["The", "king", "built", "the", "house", "is", "you", "this"],
-              "explanation": "𒈗𒂊 𒂍 𒈬𒆕 (lugal-e e₂ mu-du₃) follows SOV order: king-house-built."
-            },
-            {
-              "type": "blocks",
-              "prompt": "Translate into Sumerian.",
-              "subtitle": "Build the Sumerian sentence from the blocks.",
-              "source": "I am a king",
-              "answer": ["𒂊", "𒈗"],
-              "words": ["𒂊", "𒈗", "𒂍", "𒍝", "𒈬𒆕"],
-              "explanation": "A = B structure: ĝe26 lugal → I king → 'I am king'."
-            },
-            {
-              "type": "blocks",
-              "prompt": "Translate into English.",
-              "subtitle": "Build the English sentence from the blocks.",
-              "source": "𒍝𒂊 𒂍 𒈬𒆕",
-              "answer": ["you", "build", "a house"],
-              "words": ["my", "you", "his", "a house", "king", "build"],
-              "explanation": "𒍝𒂍𒈬𒆕 (ze-e e₂  mu-du₃) means \"you build a house\"."
-            }
+          {
+            type: "info",
+            title: "New word: 𒈗 - king, master, lord",
+            text: "𒈗 (lugal)",
+            example: "𒈗 𒂍 𒆕 (lugal é dù) - king built a house",
+            explanation: "I recommed writing all the cuneiform writings in a notepad or doing something like that."
+          },
+          {
+            type: "info",
+            title: "New word: 𒃲 - big, great, large",
+            text: "𒃲 (gal)",
+            example: "𒂍 𒃲 (é-gal) - big temple",
+            explanation: ""
+          },
+          {
+            type: "info",
+            title: "New word: 𒂍 - house",
+            text: "𒂍 (é)",
+            example: "𒂍 𒃲 (é-gal) - big temple",
+            explanation: ""
+          },
+          {
+            type: "info",
+            title: "Sumerian grammar",
+            text: "Adjectives",
+            example: "𒂍 𒃲 (é-gal)",
+            explanation: "Adjectives goes after the nouns (𒂍 - house/temple, 𒃲 - big/great/large)."
+          },
+          {
+            type: "match",
+            prompt: "Match the cuneiforms to their reading.",
+            subtitle: "Tap one item on the left, then the matching item on the right and then click check.",
+            pairs: [
+              ["𒈗", "lugal - king"],
+              ["𒃲", "gal - big"],
+              ["𒂍", "é - house"]
+            ],
+            explanation: ""
+          },
+          {
+            type: "blocks",
+            prompt: "Translate into English.",
+            subtitle: "Build the English sentence from the blocks.",
+            source: "𒂍 𒃲",
+            answer: ["large", "house"],
+            words: ["house", "king", "good", "large", "bad"],
+            explanation: "𒂍 𒃲 (é-gal) means \"large house\""
+          },
+          {
+            type: "info",
+            title: "Sumerian grammar",
+            text: "Verbs and word order",
+            example: "𒈗 𒂍 𒆕 (lugal é dù) - The king built the temple",
+            explanation: "Sumerian similary to japanese uses SOV (subject-object-verb) word order. The base form means that action is complete. For now you won't learn any verb forms."
+          },
+          {
+            type: "info",
+            title: "New word: 𒆕 - to build",
+            text: "𒆕 (dù)",
+            example: "𒈗 𒂍 𒆕 (lugal é dù) - The king built the temple",
+            explanation: ""
+          },
+          {
+            type: "blocks",
+            prompt: "Translate into English.",
+            subtitle: "Build the English sentence from the blocks.",
+            source: "𒈗 𒂍 𒆕",
+            answer: ["the king", "built", "the temple"],
+            words: ["big", "the king", "built", "the temple", "bad"],
+            explanation: "𒈗 𒂍 𒆕 (lugal é dù) means \"the king build the temple\""
+          },
+
           ]
         }
     }
@@ -794,14 +769,10 @@ const hieroglyphDictionary = [
 
 const cuneiformDictionary = [
   // Lesson 1
-  { glyph: "𒈗", translit: "lugal", meaning: "king", note: "Lesson 1: noun" },
-  { glyph: "𒂍", translit: "e₂", meaning: "house", note: "Lesson 1: noun" },
-  { glyph: "𒂊", translit: "ĝe26", meaning: "I", note: "Lesson 1: pronoun" },
-  { glyph: "𒍝", translit: "ze₂", meaning: "you", note: "Lesson 1: pronoun" },
-  { glyph: "𒆕", translit: "du₃", meaning: "to build", note: "Lesson 1: verb root" },
-  { glyph: "𒈬𒆕", translit: "mu-du₃", meaning: "built / has built", note: "Lesson 1: completed verb form" },
-  { glyph: "𒁉", translit: "bi", meaning: "this / that", note: "Lesson 1: demonstrative" },
-  { glyph: "-𒂊", translit: "-e", meaning: "ergative case ending (doer of action)", note: "Lesson 1: grammar" }
+  { glyph: "𒈗", translit: "lugal", meaning: "king, master, lord", note: "Lesson 1: noun" },
+  { glyph: "𒃲", translit: "gal", meaning: "big, great, large", note: "Lesson 1: adjective" },
+  { glyph: "𒂍", translit: "é", meaning: "house, temple", note: "Lesson 1: noun" },
+  { glyph: "𒆕", translit: "dù", meaning: "to build, built", note: "Lesson 1: verb" },
 ];
 
 const $ = (id) => document.getElementById(id);
