@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LingsNiche</title>
+  <title>Course | LingsNiche</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -12,38 +12,31 @@
 <body>
   <header class="sticky">
     <div class="topbar wrap">
-      <div class="brand"><div class="logo">◆</div> LingsNiche</div>
+      <a class="back" href="index.html">← Back to courses</a>
       <div class="nav-links">
-        <a href="index.html">Courses</a>
-        <a href="dictionary.html?course=ancient-egyptian">Dictionary</a>
+        <a href="lesson.html?course=ancient-egyptian&lesson=basics-1">Lesson 1</a>
+        <a id="dictionaryLink" href="dictionary.html?course=ancient-egyptian">Dictionary</a>
       </div>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-card">
-        <div class="eyebrow">Static practice without registration</div>
-        <h1>Learn Ancient Egyptian and Sumerian with hieroglyphs, translation, cuneiform and instant feedback.</h1>
-        <p>
-          This version is focused on a Sumerian and Ancient Egyptian courses.
-        </p>
-        <div class="cta-row">
-          <a class="btn primary" href="course.html?course=ancient-egyptian">Open the course</a>
-          <a class="btn secondary" href="lesson.html?course=ancient-egyptian&lesson=basics-1">Start lesson 1</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="course-wrap" id="courses">
-      <div class="section-title">
-        <div>
-          <h2>Courses</h2>
-          <p>For now there are two courses, but I'll add more later on.</p>
-        </div>
+  <main class="page">
+    <section class="card page-card stack">
+      <div class="badge" id="courseBadge">Course</div>
+      <div>
+        <h1 class="course-title" id="courseTitle">Loading…</h1>
+        <p class="lead" id="courseIntro"></p>
       </div>
 
-      <div class="grid" id="courseGrid"></div>
+      <div>
+        <div class="section-title">
+          <div>
+            <h2>Lessons</h2>
+            <p>Open a lesson to start practice.</p>
+          </div>
+        </div>
+        <ul class="lesson-list" id="lessonList"></ul>
+      </div>
     </section>
   </main>
 
