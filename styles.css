@@ -1,18 +1,19 @@
 :root{
-  --pink:#ff8fb1;
-  --pink-dark:#e85d9e;
-  --bg:#fff7fb;
+  --pink:#ff8a3d;
+  --pink-dark:#e85d0c;
+  --bg:#fff7f2;
   --card:#ffffff;
   --text:#2b2b2b;
   --muted:#7a6f7a;
-  --border:#f3d6e6;
-  --blue:#a78bfa;
-  --red:#ff6b81;
-  --shadow: 0 10px 30px rgba(255,143,177,.18);
+  --border:#f3dccf;
+  --blue:#8ba9fa;
+  --red:#ff6b6b;
+  --shadow: 0 10px 30px rgba(255,138,61,.18);
   --radius: 24px;
 }
 
-*{box-sizing:border-box}
+*
+{box-sizing:border-box}
 
 html{scroll-behavior:smooth}
 
@@ -20,7 +21,7 @@ body{
   margin:0;
   font-family:Inter, system-ui, sans-serif;
   background:
-    radial-gradient(circle at top left, rgba(255,143,177,.18), transparent 25%),
+    radial-gradient(circle at top left, rgba(255,138,61,.18), transparent 25%),
     radial-gradient(circle at top right, rgba(167,139,250,.12), transparent 20%),
     var(--bg);
   color:var(--text);
@@ -29,7 +30,7 @@ body{
 a{color:inherit}
 
 code{
-  background:#f7eef4;
+  background:#fff1e8;
   padding:.15rem .35rem;
   border-radius:.4rem;
 }
@@ -45,9 +46,9 @@ header.sticky{
   position:sticky;
   top:0;
   z-index:20;
-  background:rgba(255,247,251,.9);
+  background:rgba(255,247,242,.9);
   backdrop-filter: blur(10px);
-  border-bottom:1px solid rgba(243,214,230,.9);
+  border-bottom:1px solid rgba(243,220,207,.9);
 }
 
 .topbar{
@@ -70,12 +71,12 @@ header.sticky{
   width:40px;
   height:40px;
   border-radius:14px;
-  background:linear-gradient(135deg, var(--pink), #ffc1d6);
+  background:linear-gradient(135deg, var(--pink), #ffd2b3);
   display:grid;
   place-items:center;
   color:white;
   font-size:22px;
-  box-shadow:0 8px 18px rgba(255,143,177,.35);
+  box-shadow:0 8px 18px rgba(255,138,61,.35);
 }
 
 .nav-links{
@@ -93,7 +94,7 @@ header.sticky{
 }
 
 .nav-links a:hover{
-  background:#ffe4ef;
+  background:#ffe9dd;
   color:var(--pink-dark);
 }
 
@@ -122,7 +123,7 @@ header.sticky{
   inset:auto -60px -60px auto;
   width:220px;
   height:220px;
-  background:radial-gradient(circle, rgba(255,143,177,.22), transparent 65%);
+  background:radial-gradient(circle, rgba(255,138,61,.22), transparent 65%);
   pointer-events:none;
 }
 
@@ -132,7 +133,7 @@ header.sticky{
   gap:8px;
   padding:8px 12px;
   border-radius:999px;
-  background:#ffe4ef;
+  background:#ffe9dd;
   color:var(--pink-dark);
   font-weight:700;
   font-size:13px;
@@ -181,7 +182,7 @@ h1{
 .btn.primary{
   background:var(--pink);
   color:#fff;
-  box-shadow:0 12px 20px rgba(255,143,177,.35);
+  box-shadow:0 12px 20px rgba(255,138,61,.35);
 }
 
 .btn.secondary{
@@ -237,7 +238,7 @@ h1{
   border-radius:18px;
   display:grid;
   place-items:center;
-  background:linear-gradient(135deg, rgba(255,143,177,.18), rgba(255,143,177,.06));
+  background:linear-gradient(135deg, rgba(255,138,61,.18), rgba(255,138,61,.06));
   color:var(--pink-dark);
   font-size:28px;
   flex:0 0 auto;
@@ -270,7 +271,7 @@ h1{
   padding:12px 14px;
   border:1px solid var(--border);
   border-radius:16px;
-  background:#fff9fc;
+  background:#fff9f5;
 }
 
 .lesson-list strong{font-size:14px}
@@ -289,7 +290,7 @@ h1{
   display:inline-flex;
   align-items:center;
   gap:8px;
-  background:#ffe4ef;
+  background:#ffe9dd;
   color:var(--pink-dark);
   border-radius:999px;
   padding:8px 12px;
@@ -407,7 +408,7 @@ h1{
 .progress > div{
   height:100%;
   width:0%;
-  background:linear-gradient(90deg, var(--pink), #ffc1d6);
+  background:linear-gradient(90deg, var(--pink), #ffd2b3);
   border-radius:999px;
   transition:width .25s ease;
 }
@@ -451,7 +452,7 @@ h1{
   padding:20px;
   border-radius:22px;
   border:1px solid var(--border);
-  background:#fff9fc;
+  background:#fff9f5;
 }
 
 .match-layout{
@@ -481,8 +482,8 @@ h1{
 
 .option.selected{
   border-color:var(--pink);
-  background:#ffe4ef;
-  box-shadow:0 8px 16px rgba(255,143,177,.18);
+  background:#ffe9dd;
+  box-shadow:0 8px 16px rgba(255,138,61,.18);
 }
 
 .option.matched{
@@ -493,7 +494,7 @@ h1{
 
 .option.correct{
   border-color:var(--pink);
-  background:#ffe4ef;
+  background:#ffe9dd;
 }
 
 .option.wrong{
@@ -551,7 +552,7 @@ h1{
 
 .chip{
   border:none;
-  background:#ffe4ef;
+  background:#ffe9dd;
   color:#7a1f4d;
   border-radius:999px;
   padding:10px 14px;
@@ -584,8 +585,8 @@ h1{
 .feedback.show{display:block}
 
 .feedback.correct{
-  background:#ffe4ef;
-  color:#7a1f4d;
+  background:#ffe9dd;
+  color:#7a2a00;
   border:1px solid #ffc1d6;
 }
 
