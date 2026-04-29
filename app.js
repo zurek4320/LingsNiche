@@ -688,26 +688,338 @@ const courses = {  "ancient-egyptian": {    title: "Ancient Egyptian basics",
             type: "info",
             title: "Sumerian grammar",
             text: "Verbs and word order",
-            example: "𒈗 𒂍 𒆕 (lugal é dù) - The king built the temple",
-            explanation: "Sumerian similary to japanese uses SOV (subject-object-verb) word order. The base form means that action is complete. For now you won't learn any verb forms."
+            example: "𒈗 𒂍 𒆕 (lugal é dù) - The king builds the temple",
+            explanation: "Sumerian similary to japanese uses SOV (subject-object-verb) word order. The base form means that action is ongoing. For now you won't learn any verb forms."
           },
           {
             type: "info",
-            title: "New word: 𒆕 - to build",
+            title: "New word: 𒆕 - to build, (he is) building, builds",
             text: "𒆕 (dù)",
-            example: "𒈗 𒂍 𒆕 (lugal é dù) - The king built the temple",
-            explanation: ""
+            example: "𒈗 𒂍 𒆕 (lugal é dù) - The king builds the temple",
+            explanation: "In Sumerian the word \"is\" is often skipped. Also the base form of the verb is the present form as well."
           },
           {
             type: "blocks",
             prompt: "Translate into English.",
             subtitle: "Build the English sentence from the blocks.",
             source: "𒈗 𒂍 𒆕",
-            answer: ["the king", "built", "the temple"],
-            words: ["big", "the king", "built", "the temple", "bad"],
-            explanation: "𒈗 𒂍 𒆕 (lugal é dù) means \"the king build the temple\""
+            answer: ["the king", "builds", "the temple"],
+            words: ["big", "the king", "builds", "the temple", "bad"],
+            explanation: "𒈗 𒂍 𒆕 (lugal é dù) means \"the king builds the temple\""
           },
 
+          ]
+        },
+        "basics-2": {
+          "title": "I am",
+          "intro": "You will learn Sumerian words and grammar associated with the word \"I\" and past verb form.",
+          "questions": [
+          {
+            type: "info",
+            title: "New word: 𒂷 - I, me, myself",
+            text: "𒂷 (ĝe)",
+            example: "𒂷 𒈗 𒄿 𒃞 (ĝe lugal-men) - I am a king (with strong emphasis on the word \"I\")",
+            explanation: "You normaly don't use the word I in a sentence with a verb \"to be\" as it is irregular and you already know the pronoun from it."
+          },
+          {
+            type: "info",
+            title: "New word: 𒄿 𒃞/𒃞 - I am (a verb, goes after another verb)/I am (a verb placed after a noun like in a sentence \"I am X\")",
+            text: "𒄿 𒃞 (i.men)/𒃞 (men)",
+            example: "𒂍 𒆕 𒄿 𒃞 (é dù i.men) - I am building a house, 𒈗 𒃞 (lugal-men) - I am a king",
+            explanation: "Like in a lot of languages in Sumerian the verb \"to be\" is irregular."
+          },
+          {
+            type: "match",
+            prompt: "Match the cuneiforms to their reading.",
+            subtitle: "Tap one item on the left, then the matching item on the right and then click check.",
+            pairs: [
+              ["𒄿 𒃞 (i.men)", "goes after a verb"],
+              ["𒃞 (men)", "goes after a noun"],
+            ],
+            explanation: ""
+          },
+          {
+            type: "blocks",
+            prompt: "Translate into English.",
+            subtitle: "Build the English sentence from the blocks.",
+            source: "𒂍 𒆕 𒄿 𒃞",
+            answer: ["I", "am", "building", "a temple"],
+            words: ["is", "building", "I", "am", "a temple", "the king"],
+            explanation: "𒂍 𒆕 𒄿 𒃞 (é dù i.men) means \"I am building a temple\""
+          },
+          {
+            type: "blocks",
+            prompt: "Translate into English.",
+            subtitle: "Build the English sentence from the blocks.",
+            source: "I am a king! (with strong emphasis on the fact that I (ME, MYSELF) AM the king)",
+            answer: ["𒂷", "𒈗", "𒃞"],
+            words: ["𒈗", "𒂍", "𒂷", "𒄿", "𒃞"],
+            explanation: "𒂷 𒈗 𒃞 (ĝe lugal-men) means \"I am a king\". Remember that i.men is used in sentences with another verb not in sentences like \"I am X\" so here we are using -men (by attaching it to the word king)."
+          },
+          {
+            type: "info",
+            title: "New word: 𒈬 - my (adjective)",
+            text: "𒈬 (ĝu)",
+            example: "𒂍 𒈬 𒃲 (é ĝu gal) - my house is big",
+            explanation: ""
+          },
+          {
+            type: "info",
+            title: "New word/Sumerian grammar: 𒈬 - past tense verb marker",
+            text: "𒈬 (mu)",
+            example: "𒈗 𒂍 𒈬 𒆕 (lugal é mu-dù) - the king built the temple",
+            explanation: "Goes before the verb. Notice how mu (𒈬) have the same cuneiform character as ĝu (𒈬)."
+          },          
+          {
+            type: "match",
+            prompt: "Match the cuneiforms to their reading.",
+            subtitle: "Tap one item on the left, then the matching item on the right and then click check.",
+            pairs: [
+              ["𒈬", "ĝu/mu - my/past tense verb marker"],
+              ["𒄿 𒃞", "i.men - I am"],
+              ["𒃞", "men - I am"],
+              ["𒂷", "ĝe - I"]
+            ],
+            explanation: ""
+          },
+          {
+            type: "blocks",
+            prompt: "Translate into English.",
+            subtitle: "Build the English sentence from the blocks.",
+            source: "I built my house (with strong emphasis on \"I\")",
+            answer: ["𒂷", "𒂍", "𒈬 (ĝu)", "𒈬 (mu)", "𒆕"],
+            words: ["𒂷", "𒂍", "𒈬 (ĝu)", "𒈬 (mu)", "𒆕"],
+            explanation: "𒂷 𒂍 𒈬 𒈬 𒆕(ĝe é-ĝu mu-du) means \"I built my house\" with strong emphasis on the word \"I\""
+          }
+          ]
+        },
+        "basics-3": {
+          "title": "You are and you see",
+          "intro": "You will learn how to say \"you\", \"your\" and use the verb \"to see\"",
+
+          "questions": [
+            {
+              type: "info",
+              title: "New word: 𒂊𒍢 - you (singular)",
+              text: "𒂊𒍢 (e-zé)",
+              example: "𒂊𒍢 𒈗 𒃞 (e-zé lugal-men) - You are a king",
+              explanation: "This is the independent pronoun \"you\". It can be used for emphasis, just like 𒂷 (I)."
+            },
+            {
+              type: "info",
+              title: "New word: 𒃞 - you are",
+              text: "𒃞 (men)",
+              example: "𒈗 𒃞 (lugal-men) - You are a king",
+              explanation: "𒃞 (men) works the same way as in \"I am\". It is attached to a noun to mean \"are\"."
+            },
+            {
+              type: "match",
+              prompt: "Match the cuneiforms to their meaning.",
+              subtitle: "Practice \"you\" and \"you are\".",
+              pairs: [
+                ["𒂊𒍢", "you"],
+                ["𒃞", "are (to be)"]
+              ],
+              explanation: ""
+            },
+            {
+              type: "blocks",
+              prompt: "Translate into English.",
+              subtitle: "Build the English sentence from the blocks.",
+              source: "𒈗 𒃞",
+              answer: ["you", "are", "a king"],
+              words: ["you", "are", "a king", "I", "build"],
+              explanation: "𒈗 𒃞 (lugal-men) means \"you are a king\"."
+            },
+            {
+              type: "blocks",
+              prompt: "Translate into cuneiform.",
+              subtitle: "Build the sentence.",
+              source: "You are a king (with emphasis on \"you\")",
+              answer: ["𒂊𒍢", "𒈗", "𒃞"],
+              words: ["𒈗", "𒂊𒍢", "𒃞", "𒂍"],
+              explanation: "𒂊𒍢 𒈗 𒃞 (e-zé lugal-men) emphasizes \"you\"."
+            },
+
+            {
+              type: "info",
+              title: "New word: 𒅆 - to see",
+              text: "𒅆 (igi)",
+              example: "𒂊𒍢 𒀭 𒅆 𒄿 𒃞 (e-zé an igi i.men) - You are seeing the sky",
+              explanation: "This verb works like others: it goes at the end of the sentence."
+            },
+            {
+              type: "info",
+              title: "New word: 𒄿 𒃞 - you are (doing something)",
+              text: "𒄿 𒃞 (i.men)",
+              example: "𒀭 𒅆 𒄿 𒃞 (an igi i.men) - You are seeing the sky",
+              explanation: "Same as with \"I am\", 𒄿 𒃞 is used after verbs."
+            },
+            {
+              type: "match",
+              prompt: "Match the cuneiforms to their meaning.",
+              subtitle: "Verb practice.",
+              pairs: [
+                ["𒅆", "to see"],
+                ["𒄿 𒃞", "are (doing)"]
+              ],
+              explanation: ""
+            },
+            {
+              type: "blocks",
+              prompt: "Translate into English.",
+              subtitle: "Build the sentence.",
+              source: "𒂍 𒅆 𒄿 𒃞",
+              answer: ["you", "are", "seeing", "a temple"],
+              words: ["you", "are", "seeing", "a temple", "I", "king"],
+              explanation: "𒂍 𒅆 𒄿 𒃞 (é igi i.men) means \"you are seeing a temple\"."
+            },
+
+            {
+              type: "info",
+              title: "New word: 𒍪 - your",
+              text: "𒍪 (zu)",
+              example: "𒂍 𒍪 𒃲 (é zu gal) - your house is big",
+              explanation: "𒍪 shows possession, just like \"my\" (𒈬)."
+            },
+            {
+              type: "info",
+              title: "New word: 𒀭 - sky, heaven",
+              text: "𒀭 (an)",
+              example: "𒀭 𒃲 (an gal) - big sky",
+              explanation: "𒀭 can mean sky or heaven."
+            },
+            {
+              type: "match",
+              prompt: "Match the cuneiforms to their meaning.",
+              subtitle: "Vocabulary check.",
+              pairs: [
+                ["𒍪", "your"],
+                ["𒀭", "sky / heaven"]
+              ],
+              explanation: ""
+            },
+
+            {
+              type: "blocks",
+              prompt: "Translate into English.",
+              subtitle: "Build the sentence.",
+              source: "𒀭 𒍪 𒃲",
+              answer: ["your", "sky", "is", "big"],
+              words: ["your", "sky", "is", "big", "I", "house"],
+              explanation: "𒀭 𒍪 𒃲 (an zu gal) means \"your sky is big\"."
+            },
+            {
+              type: "blocks",
+              prompt: "Translate into cuneiform.",
+              subtitle: "Build the sentence.",
+              source: "You are seeing your sky (without emphasis on \"you\")",
+              answer: ["𒀭", "𒍪", "𒅆", "𒄿", "𒃞"],
+              words: ["𒀭", "𒍪", "𒅆", "𒄿", "𒃞", "𒂊𒍢"],
+              explanation: "𒀭 𒍪 𒅆 𒄿 𒃞 (an zu igi i.men) means \"you are seeing your sky\"."
+            }
+          ]
+        },
+        "basics-4": {
+          "title": "Ea-nāṣir's selling of quality copper",
+          "intro": "You will learn how to say your name, combine nouns, and talk about selling copper by Ea-nāṣir",
+
+          "questions": [
+            {
+              type: "info",
+              title: "New word: 𒆠 - earth, place",
+              text: "𒆠 (ki)",
+              example: "𒆠 𒃲 (ki gal) - big land",
+              explanation: "𒆠 can mean earth, land, or place depending on context."
+            },
+            {
+              type: "info",
+              title: "Sumerian grammar",
+              text: "𒆠𒀭 - earth and heaven",
+              example: "𒆠𒀭",
+              explanation: "This is a compound expression meaning \"earth and heaven\". Sumerian often joins words without a separate word for \"and\"."
+            },
+            {
+              type: "match",
+              prompt: "Match the cuneiforms to their meaning.",
+              subtitle: "Practice new vocabulary.",
+              pairs: [
+                ["𒆠", "earth / place"],
+                ["𒀭", "heaven / sky"],
+                ["𒆠𒀭", "earth and heaven"]
+              ],
+              explanation: ""
+            },
+
+            {
+              type: "info",
+              title: "New word: 𒈬 - name",
+              text: "𒈬 (mu)",
+              example: "𒈬 𒂷 𒃞 (mu ĝe-men) - my name is...",
+              explanation: "𒈬 means \"name\". You already know it can also mark past tense - context decides the meaning."
+            },
+            {
+              type: "blocks",
+              prompt: "Translate into English.",
+              subtitle: "Build the sentence.",
+              source: "𒈬 𒂷 Anna",
+              answer: ["my", "name", "is", "Anna"],
+              words: ["my", "name", "is", "Anna", "king", "house"],
+              explanation: "𒈬 𒂷 𒀀𒈾 (mu ĝe Anna) means \"my name is Anna\"."
+            },
+            {
+              type: "blocks",
+              prompt: "Translate into cuneiform.",
+              subtitle: "Build the sentence.",
+              source: "My name is Anna",
+              answer: ["𒈬", "𒂷", "Anna"],
+              words: ["𒈬", "𒂷", "𒈗", "Anna"],
+              explanation: "Use 𒈬 (name) + 𒂷 (I/my) + the name."
+            },
+
+            {
+              type: "info",
+              title: "New word: 𒍏 - copper",
+              text: "𒍏 (urud)",
+              example: "𒍏 𒃲 (urud gal) - a lot of copper",
+              explanation: "𒍏 means copper, an important trade material in Mesopotamia."
+            },
+            {
+              type: "info",
+              title: "New word: 𒉚 - to sell",
+              text: "𒉚 (šám)",
+              example: "𒍏 𒉚 (urud šám) - sells copper",
+              explanation: "Verb goes at the end of the sentence, as usual in Sumerian."
+            },
+            {
+              type: "match",
+              prompt: "Match the cuneiforms to their meaning.",
+              subtitle: "Trade vocabulary.",
+              pairs: [
+                ["𒍏", "copper"],
+                ["𒉚", "to sell"]
+              ],
+              explanation: ""
+            },
+
+            {
+              type: "blocks",
+              prompt: "Translate into English.",
+              subtitle: "Build the sentence.",
+              source: "Ea-nāṣir 𒍏 𒉚",
+              answer: ["Ea-nāṣir", "is", "selling", "copper"],
+              words: ["Ea-nāṣir", "is", "selling", "copper", "house", "big"],
+              explanation: "Ea-nāṣir is a historical merchant. 𒍏 𒉚 (urud šám) means \"selling copper\"."
+            },
+            {
+              type: "blocks",
+              prompt: "Translate into cuneiform.",
+              subtitle: "Build the sentence.",
+              source: "Ea-nāṣir is selling copper",
+              answer: ["Ea-nāṣir", "𒍏", "𒉚"],
+              words: ["Ea-nāṣir", "𒍏", "𒉚", "𒈬", "𒂷"],
+              explanation: "Structure: subject + object + verb: Ea-nāṣir + copper + sell."
+            }
           ]
         }
     }
@@ -773,6 +1085,25 @@ const cuneiformDictionary = [
   { glyph: "𒃲", translit: "gal", meaning: "big, great, large", note: "Lesson 1: adjective" },
   { glyph: "𒂍", translit: "é", meaning: "house, temple", note: "Lesson 1: noun" },
   { glyph: "𒆕", translit: "dù", meaning: "to build, built", note: "Lesson 1: verb" },
+  // Lesson 2
+  { glyph: "𒂷", translit: "ĝe", meaning: "I, me, myself", note: "Lesson 2: pronoun" },
+  { glyph: "𒄿𒃞", translit: "i.men", meaning: "I am (doing something)", note: "Lesson 2: verb" },
+  { glyph: "𒃞", translit: "-men", meaning: "I am (something, someone)", note: "Lesson 2: verb" },
+  { glyph: "𒈬", translit: "ĝu", meaning: "my", note: "Lesson 2: possesive pronoun" },
+  { glyph: "𒈬", translit: "mu", meaning: "past tense verb marker", note: "Lesson 2: grammar" },
+  // Lesson 3
+  { glyph: "𒂊𒍢", translit: "e-zé", meaning: "you (singular)", note: "Lesson 3: pronoun" },
+  { glyph: "𒃞", translit: "-men", meaning: "are (to be)", note: "Lesson 3: verb (copula)" },
+  { glyph: "𒅆", translit: "igi", meaning: "to see", note: "Lesson 3: verb" },
+  { glyph: "𒄿𒃞", translit: "i.men", meaning: "are (doing something)", note: "Lesson 3: verb form" },
+  { glyph: "𒍪", translit: "zu", meaning: "your", note: "Lesson 3: possessive pronoun" },
+  { glyph: "𒀭", translit: "an", meaning: "sky, heaven", note: "Lesson 3: noun" },
+  // Lesson 4
+  { glyph: "𒆠", translit: "ki", meaning: "earth, land, place", note: "Lesson 4: noun" },
+  { glyph: "𒆠𒀭", translit: "ki-an", meaning: "earth and heaven", note: "Lesson 4: compound" },
+  { glyph: "𒈬", translit: "mu", meaning: "name", note: "Lesson 4: noun" },
+  { glyph: "𒍏", translit: "urud", meaning: "copper", note: "Lesson 4: noun" },
+  { glyph: "𒉚", translit: "šám", meaning: "to sell", note: "Lesson 4: verb" },
 ];
 
 const $ = (id) => document.getElementById(id);
